@@ -7,7 +7,7 @@ header .header-wrapper {
 }
 
 header h1 {
-  width: 200px;
+  width: 220px;
 }
 
 header h1 a {
@@ -25,7 +25,7 @@ header nav .global-nav {
   position: static;
   padding: 0;
   background-color: var(--bg-color1);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
 header nav .global-nav a {
@@ -39,9 +39,9 @@ header .header-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 30px;
-  font-size: 15px;
+  width: 190px;
+  height: 35px;
+  font-size: 16px;
   gap: 5px;
   background-color: #d0f1f86e;
   border-radius: 30px;
@@ -52,11 +52,15 @@ header .header-button svg {
   fill: var(--main-color);
 }
 
+.fix {
+  right: 35px;
+}
+
 .fix li {
-  width: 100px;
-  height: 100px;
-  font-size: 1rem;
-  margin: 18px 0;
+  width: 110px;
+  height: 110px;
+  font-size: 1.1rem;
+  margin: 20px 0;
 }
 
 .fix li svg {
@@ -111,6 +115,14 @@ header .header-button svg {
   margin: 40px auto;
 }
 
+.arrivals-img figcaption {
+  font-size: 1.15rem;
+  transform: translateX(-5px);
+}
+
+.arrivals-img figcaption span {
+  margin-bottom: 5px;
+}
 .arrivals-img figure:nth-child(1) {
   display: block;
   margin: 0 auto;
@@ -141,7 +153,10 @@ header .header-button svg {
 }
 
 .best a {
-  width: 90px;
+  width: 95px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 1.1rem;
 }
 
 /****** news ******/
