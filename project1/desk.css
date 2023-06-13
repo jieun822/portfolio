@@ -26,7 +26,7 @@ header nav .global-nav {
   padding: 0;
   background-color: var(--bg-color1);
   font-size: 1.05rem;
-  min-width: 40px;
+  min-width: 435px;
   justify-content: center;
 }
 
