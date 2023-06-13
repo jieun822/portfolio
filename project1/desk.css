@@ -25,8 +25,8 @@ header nav .global-nav {
   position: static;
   padding: 0;
   background-color: var(--bg-color1);
-  font-size: 1rem;
-  min-width: 430px;
+  font-size: 1.05rem;
+  min-width: 40px;
   justify-content: center;
 }
 
@@ -42,8 +42,8 @@ header .header-button {
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 28px;
-  font-size: 12px;
+  height: 30px;
+  font-size: 13px;
   gap: 5px;
   background-color: #d0f1f86e;
   border-radius: 30px;
@@ -99,7 +99,7 @@ header .header-button svg {
 }
 
 .side-img-1 {
-  width: 21vw;
+  width: 22vw;
   top: 0px;
   left: 10%;
 }
