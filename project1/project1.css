@@ -13,6 +13,9 @@ header .header-button {
 .welcome {
   background-color: var(--bg-color1);
   text-align: center;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 .welcome .welcome-txt h1 {
   font-family: "Rubik";
@@ -116,6 +119,9 @@ header .header-button {
   background-color: var(--bg-color2);
   padding: 50px 0;
   position: relative;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .section-txt {
@@ -234,6 +240,9 @@ header .header-button {
 .insta {
   background-color: var(--bg-color2);
   padding: 60px 0;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .insta-txt {
