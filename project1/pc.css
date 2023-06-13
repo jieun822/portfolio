@@ -39,11 +39,11 @@ header .header-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
+  width: 170px;
   height: 30px;
-  font-size: 15px;
+  font-size: 13px;
   gap: 5px;
-  background-color: #d4e9ff90;
+  background-color: #d0f1f86e;
   border-radius: 30px;
 }
 
@@ -70,31 +70,31 @@ header .header-button svg {
 }
 
 .welcome-img {
-  width: 800px;
+  width: 55%;
   margin: 40px auto;
 }
 
 .side-img-1 {
-  width: 15.5%;
+  width: 15%;
   top: 0px;
   left: 21%;
 }
 
 .side-img-2 {
-  width: 14%;
+  width: 13.5%;
   bottom: 8%;
   right: 20%;
 }
 
 .side-txt img:nth-child(1) {
   top: 10%;
-  width: 10%;
-  right: 22%;
+  width: 9.5%;
+  right: 23%;
 }
 
 .side-txt img:nth-child(2) {
   bottom: 5%;
-  width: 10%;
+  width: 9.5%;
   left: 24%;
 }
 
@@ -142,32 +142,33 @@ header .header-button svg {
 
 /****** news ******/
 .news li {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 25px 40px;
 }
 
 .news1 span {
-  display: inline;
-  font-size: 1.3rem;
-  margin-right: 200px;
+  width: 200px;
+  display: inline-block;
+  font-size: 1.25rem;
 }
 
 /****** insta ******/
-
+.insta {
+  padding: 80px 0 100px;
+}
 .insta-img img:nth-child(n + 5):nth-child(-n + 7) {
   display: block;
 }
 
 .insta-img img {
-  width: 280px;
-}
-
-.insta-img img {
-  border: none;
+  width: 250px;
+  border: 3px solid #000;
 }
 
 /****** youtube ******/
-
+.youtube .section-txt {
+  padding-bottom: 15px;
+}
 .youtube-wrapper iframe:nth-child(1) {
   display: block;
 }
@@ -180,7 +181,7 @@ header .header-button svg {
   display: flex;
   width: 85%;
   gap: 20px;
-  padding: 60px 0 40px;
+  padding: 50px 0 35px;
 }
 .youtube-wrapper iframe {
   width: 100%;

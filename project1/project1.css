@@ -17,7 +17,7 @@ header .header-button {
 .welcome .welcome-txt h1 {
   font-family: "Rubik";
   font-weight: 900;
-  font-size: 2.7rem;
+  font-size: 8.8vw;
   color: var(--main-color);
   line-height: 0.9;
   padding-top: 80px;
@@ -35,7 +35,7 @@ header .header-button {
   width: 98%;
 }
 .side-img-1 {
-  width: 33%;
+  width: 30vw;
   position: absolute;
   top: -10px;
   left: 0px;
@@ -43,7 +43,7 @@ header .header-button {
 }
 
 .side-img-2 {
-  width: 33%;
+  width: 29vw;
   position: absolute;
   bottom: 0;
   right: 15px;
@@ -63,7 +63,7 @@ header .header-button {
 .side-txt img:nth-child(1) {
   position: absolute;
   top: 10px;
-  width: 23%;
+  width: 24%;
   right: 10px;
   cursor: pointer;
   transition: 0.3s;
@@ -72,8 +72,8 @@ header .header-button {
 .side-txt img:nth-child(2) {
   position: absolute;
   bottom: 0;
-  width: 24%;
-  left: 50px;
+  width: 25%;
+  left: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -122,6 +122,13 @@ header .header-button {
   font-family: "Rubik";
   font-size: 1.75rem;
 }
+.arrivals-img figure img {
+  transition: 0.5s;
+}
+
+.arrivals-img figure img:hover {
+  transform: scale(1.1);
+}
 
 .arrivals-img figure {
   display: none;
@@ -138,7 +145,7 @@ header .header-button {
 }
 
 .arrivals-img figure:nth-child(3) figcaption {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   font-weight: 500;
 }
@@ -183,6 +190,9 @@ header .header-button {
   padding: 15px 30px;
   box-sizing: border-box;
   line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news li:nth-child(1) {
@@ -223,7 +233,7 @@ header .header-button {
 
 .insta {
   background-color: var(--bg-color2);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .insta-txt {
@@ -245,7 +255,7 @@ header .header-button {
 }
 .insta-img img {
   width: 26%;
-  border: 1px solid #000;
+  border: 2px solid #000;
   cursor: pointer;
 }
 
@@ -300,7 +310,7 @@ header .header-button {
 }
 .youtube-wrapper iframe {
   width: 100%;
-  aspect-ratio: 16 /9;
+  aspect-ratio: 16 / 9;
 }
 
 .youtube-wrapper iframe:nth-child(1) {
