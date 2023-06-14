@@ -26,6 +26,7 @@ header nav .global-nav {
   padding: 0;
   background-color: var(--bg-color1);
   font-size: 1.2rem;
+  min-width: 700px;
 }
 
 header nav .global-nav a {
@@ -92,13 +93,13 @@ header .header-button svg {
 
 .side-txt img:nth-child(1) {
   top: 10%;
-  width: 9.5%;
+  width: 9%;
   right: 23%;
 }
 
 .side-txt img:nth-child(2) {
   bottom: 5%;
-  width: 9.5%;
+  width: 9%;
   left: 24%;
 }
 
@@ -117,16 +118,19 @@ header .header-button svg {
 
 .arrivals-img figcaption {
   font-size: 1.15rem;
-  transform: translateX(-5px);
 }
 
 .arrivals-img figcaption span {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .arrivals-img figure:nth-child(1) {
   display: block;
   margin: 0 auto;
   width: 120%;
+}
+
+.arrivals-img figure img {
+  scale: 1.03;
 }
 
 .arrivals-img figure:nth-child(2) {
@@ -217,28 +221,32 @@ footer {
 }
 
 footer .service {
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   position: static;
-  gap: 15px;
+  gap: 20px;
+}
+
+.number p {
+  font-size: 1rem;
 }
 
 .number p span {
   display: inline;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .icon-box a {
   margin-left: 20px;
 }
 .icon-box svg {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   fill: #fff;
 }
 
 .bottom-txt .copy {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
