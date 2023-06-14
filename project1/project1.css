@@ -382,4 +382,25 @@ footer .service {
   color: #909090;
   font-size: 0.5rem;
   line-height: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio {
+  align-self: flex-end;
+}
+
+.portfolio a {
+  text-align: center;
+  display: block;
+  color: #fff;
+  width: 105px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.portfolio:hover a {
+  border-radius: 30px;
 }

@@ -274,3 +274,10 @@ footer .service {
   justify-content: space-between;
   font-size: 0.9rem;
 }
+
+.portfolio a {
+  font-size: 0.8rem;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+}
