@@ -93,13 +93,13 @@ header .header-button svg {
 
 .side-txt img:nth-child(1) {
   top: 10%;
-  width: 9%;
+  width: 8.5vw;
   right: 23%;
 }
 
 .side-txt img:nth-child(2) {
   bottom: 5%;
-  width: 9%;
+  width: 9vw;
   left: 24%;
 }
 
