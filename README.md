@@ -6,7 +6,7 @@
 
 > 리디자인 사이트 바로 가기 👉 [클릭!] https://jieun822.github.io/portfolio/project1/project1.html
 
-## 🕰️ 개발 기간
+## 🕰️ 진행 기간
 * 23.06.nn일 - 22.06.nn일
 
 ## 💡 어려웠던 부분 (해결 방법)  
