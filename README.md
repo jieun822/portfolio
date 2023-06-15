@@ -2,7 +2,9 @@
 
 ## 🖥️ Project1
 '만랩커피' 사이트를 반응형 웹으로 리디자인 하였습니다.</br>
-(모바일:768px 데스크탑:1024px pc:1920px)
+- 모바일 : 768px</br>
+- 태블릿: 1024px</br>
+- 데스크탑: 1920px
 
 > 리디자인 사이트 바로 가기 👉 [클릭!](https://jieun822.github.io/portfolio/project1/project1.html#)
 
