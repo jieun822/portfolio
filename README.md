@@ -4,7 +4,8 @@
 '만랩커피' 사이트를 반응형 웹으로 리디자인 하였습니다.</br>
 (모바일:768px 데스크탑:1024px pc:1920px)
 
-> 리디자인 사이트 바로 가기 👉 [클릭!] https://jieun822.github.io/portfolio/project1/project1.html
+> 리디자인 사이트 바로 가기 👉 [클릭!](https://jieun822.github.io/portfolio/project1/project1.html#)
+
 
 ## 🕰️ 진행 기간
 * 23.06.nn일 - 22.06.nn일
