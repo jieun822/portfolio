@@ -249,8 +249,9 @@ header .header-button {
 }
 
 .insta-txt svg {
-  width: 40px;
+  width: 30px;
 }
+
 .insta-img {
   overflow: hidden;
   display: flex;

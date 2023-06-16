@@ -217,6 +217,10 @@ header .header-button svg {
   border: 2.5px solid #000;
 }
 
+.insta-txt svg {
+  width: 40px;
+}
+
 /****** youtube ******/
 
 .youtube-wrapper iframe:nth-child(1) {
