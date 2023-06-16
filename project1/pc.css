@@ -128,6 +128,13 @@ header .header-button svg {
   margin: 0 auto;
   width: 120%;
 }
+.arrivals-img figure img {
+  transition: 0.5s;
+}
+
+.arrivals-img figure img:hover {
+  transform: scale(1.1);
+}
 
 .arrivals-img figure img {
   scale: 1.03;
