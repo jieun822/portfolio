@@ -1,6 +1,6 @@
 # portfolio
 
-## 🖥️ Project1
+## 🖥️ Project1.
 '만랩커피' 사이트를 <strong>반응형 웹</strong>으로 리디자인 하였습니다.</br>
 - 모바일 : 768px</br>
 - 태블릿: 1024px</br>
