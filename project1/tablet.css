@@ -188,7 +188,7 @@ header .header-button svg {
   position: absolute;
   top: 5px;
   right: 22%;
-  rotate: -15deg;
+  transform: rotate(-15deg);
   z-index: -9;
 }
 /****** news ******/
