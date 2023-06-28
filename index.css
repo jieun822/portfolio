@@ -12,6 +12,7 @@
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
+  --ko-font2: "GmarketSansMedium";
 }
 
 /* 스크롤바 */
@@ -82,7 +83,7 @@ nav .global-nav li:hover {
 
 header {
   width: 100%;
-  height: calc(100vh - 134px);
+  height: calc(100vh - 119.15px);
   background-color: var(--bg-color2);
   font-family: var(--en-font);
   font-size: 5vw;
@@ -195,14 +196,26 @@ header .hi {
   width: 3.5vw;
   position: absolute;
   top: 5%;
-  left: 75%;
+  left: 85%;
+  animation: circlemove 1.5s infinite linear;
 }
 
 .star3 {
   width: 3.5vw;
   position: absolute;
-  top: 13%;
-  left: 84%;
+  top: 15%;
+  left: 93%;
+  animation: circlemove 1.5s infinite linear;
+}
+
+@keyframes circlemove {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
 }
 
 .abouttxt h2 {
@@ -351,27 +364,38 @@ header .hi {
 /****** project ******/
 .project {
   background-color: var(--bg-color2);
+  border-radius: 30px 30px 0 0;
 }
 
 .projectwrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .projectpart {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   padding: 100px 0;
+  justify-content: center;
+  border-radius: 50px 50px 0 0;
+  /*  position: sticky;
+  top: 0;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
 }
 
+.projectpart:first-child {
+  padding-top: 70px;
+}
 .projecttxt {
-  width: 50%;
+  width: 40%;
   position: relative;
   transform: translatey(25%);
 }
 
 .projectwrapper img {
-  width: 45%;
-  transform: translateX(5%);
+  width: 40%;
 }
 
 .topbtn {
@@ -379,7 +403,9 @@ header .hi {
   gap: 20px;
   align-items: center;
 }
-
+.topbtn p {
+  font-weight: 500;
+}
 .topbtn p:hover {
   background-color: #333;
   color: #fff;
@@ -396,7 +422,7 @@ header .hi {
 .projecttxt h1 {
   font-size: 4vw;
   font-family: var(--ko-font);
-  padding-top: 30px;
+  padding: 20px 0 10px 0;
   font-weight: 500;
 }
 
@@ -419,9 +445,9 @@ header .hi {
   background-color: #fff;
   width: 12vw;
   height: 3vw;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 30px;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   cursor: pointer;
   box-shadow: 4px 4px 1px #b25252;
 }
@@ -448,14 +474,14 @@ header .hi {
 footer {
   background-color: var(--bg-color1);
   text-align: center;
-  padding: 100px 0 150px;
+  padding: 150px 0 180px;
   color: var(--point-color);
   font-family: var(--en-font);
   position: relative;
 }
 
 footer h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   font-weight: 600;
 }
 
@@ -466,7 +492,7 @@ footer span {
 
 footer span::after {
   content: "";
-  width: 17vw;
+  width: 16vw;
   height: 3vh;
   background-color: #d7996d;
   position: absolute;
@@ -480,22 +506,36 @@ footer span::after {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 70px;
 }
 
 .contacticon li {
   border: 3px solid var(--point-color);
-  padding: 8px 20px;
+  padding: 0.5vw 2vw;
   border-radius: 50px;
+  font-weight: 500;
 }
 .contacticon li:hover {
   background-color: #b25252;
   color: #fff;
 }
 footer img {
-  width: 13vw;
+  width: 12vw;
   position: absolute;
   left: 14vw;
   bottom: 4vw;
+}
+
+.arrowbtn a {
+  display: block;
+  background-color: #b25252;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  fill: var(--bg-color1);
+  position: fixed;
+  z-index: 9999;
+  bottom: 3vw;
+  right: 3vw;
 }
