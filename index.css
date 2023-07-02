@@ -186,6 +186,35 @@ header .hi {
   z-index: -9;
 }
 
+.lineeffect {
+  display: inline-block;
+  position: relative;
+}
+
+.connecting .pencilimg img{
+  width: 20vw;
+  position: absolute;
+  bottom: -0.5vw;
+  right: 37vw;
+  z-index: -999;
+  animation: pencil 1.5s linear infinite;
+}
+
+@keyframes pencil {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(-0deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+
+
+
 /****** about ******/
 .about {
   background-color: var(--bg-color1);
@@ -210,6 +239,10 @@ header .hi {
 .abouttxt {
   width: 50%;
   position: relative;
+}
+
+.abouttxt>p {
+  line-height: 1.4;
 }
 
 .star2 {
@@ -282,19 +315,6 @@ header .hi {
   color: #fff;
 }
 
-.lineeffect {
-  display: inline-block;
-  position: relative;
-}
-
-.connecting .pencilimg img{
-  width: 20vw;
-  position: absolute;
-  bottom: -0.5vw;
-  right: 37vw;
-  z-index: -999;
-}
-
 
 /****** skill ******/
 
@@ -309,7 +329,7 @@ header .hi {
 }
 
 .skilltitle li {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #222;
   display: flex;
   align-items: center;
   padding: 0px 60px;
@@ -337,7 +357,7 @@ header .hi {
   font-family: var(--ko-font3);
   line-height: 2;
   font-size: 1.2vw;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /****** skill ******/
