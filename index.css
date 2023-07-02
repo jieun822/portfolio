@@ -41,7 +41,10 @@ nav {
   width: 100%;
   font-family: var(--en-font);
   font-weight: 500;
-  background-color: var(--bg-color2);
+  background-color: #f6eee3;
+  /*  position: sticky;
+  top: 0; */
+  z-index: 9999;
 }
 
 .navwrapper {
@@ -365,9 +368,14 @@ header .hi {
 .project {
   background-color: var(--bg-color2);
   border-radius: 30px 30px 0 0;
+  border-bottom: 3px solid var(--point-color);
 }
 
-.projectwrapper {
+.project > h1 {
+  padding-top: 160px;
+}
+
+/* .projectwrapper {
   width: 100%;
   margin: 0 auto;
 }
@@ -381,10 +389,6 @@ header .hi {
   align-items: center;
   border-radius: 50px 50px 0 0;
   border-bottom: 3px solid #b25252;
-  /*  position: sticky;
-  top: 0;
-  margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
 }
 
 .projectpart:first-child {
@@ -397,6 +401,55 @@ header .hi {
 
 .projectwrapper img {
   width: 40%;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.projecttxt {
+  width: 40%;
+}
+
+.swiper-slide img {
+  width: 40%;
+  display: block;
+}
+
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: #121212;
+}
+
+.swiper .swiper-button-prev {
+  padding-left: 50px;
+}
+
+.swiper-button-next {
+  padding-right: 50px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  font-size: 12px;
+  opacity: 1;
+  background: #b2525288;
+  transform: translateY(-40px);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: var(--point-color);
 }
 
 .topbtn {
@@ -543,4 +596,5 @@ footer img {
   z-index: 9999;
   bottom: 3vw;
   right: 3vw;
+  opacity: 0;
 }
