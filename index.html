@@ -4,25 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>이지은 포트폴리오</title>
-  <!-- og -->
-  <meta property="og:title" content="이지은 포트폴리오">
-  <meta property="og:description" content="안녕하세요 이지은입니다 :)">
+  <!-- open graph -->
+  <meta property="og:title" content="leejieun's portfolio">
+  <meta property="og:description" content="안녕하세요 신입 웹 퍼블리셔 이지은입니다 🍒">
   <meta property="og:image" content="https://jieun822.github.io/portfolio/images/og.png">
   <meta property="og:url" content="https://jieun822.github.io/portfolio/index.html">
+
+  <title>leejieun portfolio</title>
+
   <!-- 파비콘 -->
-  <link rel="shortcut icon" href="./images/favicon-96x96.png" type="image/x-icon">
-  <link rel="icon" href="./images/favicon-96x96.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <!-- 초기화 -->
   <link rel="stylesheet" href="./common/reset.css">
+  <!-- aos.css -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- 내가 작성한 style -->
   <link rel="stylesheet" href="./index.css">
+  <!-- 제이쿼리 파일 -->
   <script src="./common/jquery-3.7.0.min.js"></script>
+  <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- 내가 쓴 제이쿼리 -->
+  <!-- swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 내가 쓴 js -->
   <script defer src="./index.js"></script>
-
-
 </head>
 
 <body>
@@ -31,10 +39,10 @@
     <div class="navwrapper">
       <h1><a href="./index.html"><img src="./images/logo.png" alt="포트폴리오 이지은 로고"></a></h1>
       <ul class="global-nav">
-        <li><a href="#">about</a></li>
-        <li><a href="#">skill</a></li>
-        <li><a href="#">project</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#aboutpage">about</a></li>
+        <li><a href="#skillpage">skill</a></li>
+        <li><a href="#projectpage">project</a></li>
+        <li><a href="#contactpage">contact</a></li>
       </ul>
     </div>
   </nav>
@@ -43,16 +51,16 @@
     <div class="headerwrap">
       <div class="hi">
         <p>Hi there</p>
-        <img src="./images/star1.png" alt="첫번째 보라색 별">
+        <img src="./images/star1.png" alt="빙글 빙글 돌아가는 보라색 별">
         <p>I'm Jieun</p>
       </div>
       <div class="middle">
         <div class="roller">
           <span id="rolltext">
             passionate<br>
-            tenacious<br>
+            creative<br>
             positive<br>
-            메롱
+            tenacious
           </span>
         </div>
         <div class="web">
@@ -62,6 +70,9 @@
       <div class="connecting">
         <p>connecting
           <span class="lineeffect">design</span> and <span class="line">code</span>
+        <div class="pencilimg">
+          <img src="./images/pencileffect.png" alt="design을 강조하는 빨간색 동그라미 이미지">
+        </div>
         </p>
       </div>
     </div>
@@ -69,19 +80,24 @@
 
   <!------ 내용들 ------>
   <!---- about ---->
-  <section class="about">
+  <section class="about" id="aboutpage">
     <h1 class="commontxt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">About Me</h1>
     <div class="aboutcontent">
       <div class="abouttxt">
-        <h2 data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">안녕하세요 :)<br>코드와 디자인을 연결하는<br>웹 퍼블리셔 이지은입니다.
+        <h2 data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">안녕하세요 :)<br>
+          <div class="typing">
+            <h1 class="text"></h1><br>
+          </div>
+          웹 퍼블리셔 이지은입니다.
         </h2>
-        <p data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">대한 가치를 스며들어 있는 예수는 위하여, 구하지 교향악이다. 물방아 만물은
-          인류의 천하를 역사를 천지는 때에, 뿐이다. 그들을 할지라도 품고 못할 이것이다. 보배를 거선의 많이 너의 때에,
-          봄바람이다
+        <p data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">
+          평소 디자인과 코딩 모두 관심이 많던 저에게 '퍼블리셔'라는 직업은 천직이라는 생각이 듭니다.
+          아무리 오랜 시간이 걸릴지라도 원하는대로 퍼블리싱을 완료했을 때의 뿌듯함은 말로 이룰 수 없습니다.
+          이런 저의 끈기와 무한한 상상력으로 디자인과 코드를 연결하는 퍼블리셔가 되겠습니다.
         </p>
-        <img src="./images/star2.png" alt="" class="star2" data-aos="fade-up" data-aos-delay="30"
+        <img src="./images/star2.png" alt="둥둥 떠있는 별" class="star2" data-aos="fade-up" data-aos-delay="30"
           data-aos-duration="1000">
-        <img src="./images/star3.png" alt="" class="star3" data-aos="fade-up" data-aos-delay="30"
+        <img src="./images/star3.png" alt="둥둥 떠있는 별2" class="star3" data-aos="fade-up" data-aos-delay="30"
           data-aos-duration="1000">
         <div class="hashtag" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">
           <p># ISFP</p>
@@ -90,17 +106,17 @@
         </div>
       </div>
       <div class="aboutimg" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">
-        <img src="./images/pro..png" alt="프로필 사진">
+        <img src="./images/pro.png" alt="이지은 프로필 사진">
       </div>
     </div>
   </section>
 
   <!---- skill & Tool ---->
-  <section class="skill">
+  <section class="skill" id="skillpage">
     <h1 class="commontxt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">Skill & Tool</h1>
     <div class="skillwrapper">
       <ul class="skilltitle" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">
-        <li><strong>HTML5 / CSS3</strong>
+        <li><strong>HTML5 & CSS3</strong>
           <span>
             - 웹 표준 & 웹 접근성을 고려한 시맨틱 태그 사용<br>
             - 미디어커리 이용 반응형 웹<br>
@@ -135,225 +151,253 @@
     </div>
   </section>
 
-  <!---- 흐르는 텍스트 ---->
-  <!-- <section class="text-wrapper">
-    <div class="text-container">
-      <h1 class="h1">Projects Projects Projects Projects</h1>
-    </div>
-  </section>
- -->
-  <!--   <div class="flow-container">
-    <div class="flow-text">
-      <div class="flow-wrap">Projects Projects Projects </div>
-      <div class="flow-wrap">Projects Projects Projects </div>
-      <div class="flow-wrap">Projects Projects Projects </div>
-      <div class="flow-wrap">Projects Projects Projects </div>
-    </div>
-  </div> -->
-
   <!---- projects --->
-  <section class="project">
+  <section class="project" id="projectpage">
     <h1 class="commontxt">Projects</h1>
-    <div class="projectwrapper">
-      <div class="projectpart">
-        <div class="projecttxt">
-          <div class="topbtn">
-            <p>App Design</p>
-            <p>UI UX</p>
+    <div class="swiper mySwiper" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+      data-aos-easing="ease-in-out">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="projecttxt">
+            <div class="topbtn">
+              <p>App Design</p>
+              <p>UI UX</p>
+            </div>
+            <h1>
+              01.<br>
+              UIUX Design<br>
+              <span>도전 독서통장</span>
+            </h1>
+            <div class="prhashtag">
+              <p># 리디자인</p>
+              <p># 개인작업</p>
+              <p># UIUX</p>
+              <p># 피그마</p>
+            </div>
+            <div class="morebtn">
+              <p><a href="#">View more</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
+              </svg>
+            </div>
           </div>
-          <h1>
-            01.<br>
-            UIUX Design<br>
-            <span>도전 독서통장</span>
-          </h1>
-          <div class="prhashtag">
-            <p># 리디자인</p>
-            <p># 개인작업</p>
-            <p># UIUX</p>
-            <p># 피그마</p>
-          </div>
-          <div class="morebtn">
-            <p><a href="#">View more</a></p>
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-              <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-            </svg>
-          </div>
+          <img src="./images/project1.png" alt="도전 독서통장 어플 이미지">
         </div>
-        <img src="./images/project1.png" alt="도전 독서통장 어플 이미지">
-      </div>
-      <div class="projectpart">
-        <div class="projecttxt">
-          <div class="topbtn">
-            <p>Web Design</p>
-            <p>ResponsibleWeb</p>
+        <div class="swiper-slide">
+          <div class="projecttxt">
+            <div class="topbtn">
+              <p>Web Design</p>
+              <p>ResponsibleWeb</p>
+            </div>
+            <h1>
+              02.<br>
+              Web Design<br>
+              <span>만랩커피</span>
+            </h1>
+            <div class="prhashtag">
+              <p># 리디자인</p>
+              <p># 개인작업</p>
+              <p># 퍼블리싱</p>
+              <p># 반응형</p>
+            </div>
+            <div class="morebtn">
+              <p><a href="#">View more</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
+              </svg>
+            </div>
           </div>
-          <h1>
-            02.<br>
-            Web Design<br>
-            <span>만랩커피</span>
-          </h1>
-          <div class="prhashtag">
-            <p># 리디자인</p>
-            <p># 개인작업</p>
-            <p># 퍼블리싱</p>
-            <p># 반응형</p>
-          </div>
-          <div class="morebtn">
-            <p><a href="#">View more</a></p>
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-              <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-            </svg>
-
-          </div>
+          <img src="./images/project2.png" alt="만랩커피 웹사이트 이미지">
         </div>
-        <img src="./images/project2.png" alt="만랩커피 이미지">
-      </div>
-      <div class="projectpart">
-        <div class="projecttxt">
-          <div class="topbtn">
-            <p>App Design</p>
-            <p>UI UX</p>
+        <div class="swiper-slide">
+          <div class="projecttxt">
+            <div class="topbtn">
+              <p>Web Design</p>
+              <p>ResponsibleWeb</p>
+            </div>
+            <h1>
+              03.<br>
+              Web Design<br>
+              <span>세번째</span>
+            </h1>
+            <div class="prhashtag">
+              <p># 리디자인</p>
+              <p># 개인작업</p>
+              <p># 퍼블리싱</p>
+              <p># 반응형</p>
+            </div>
+            <div class="morebtn">
+              <p><a href="#">View more</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
+              </svg>
+            </div>
           </div>
-          <h1>
-            03.<br>
-            Web Design<br>
-            <span>세번째</span>
-          </h1>
-          <div class="prhashtag">
-            <p># 리디자인</p>
-            <p># 개인작업</p>
-            <p># UIUX</p>
-            <p># 피그마</p>
-          </div>
-          <div class="morebtn">
-            <p><a href="#">View more</a></p>
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-              <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-            </svg>
-          </div>
+          <img src="./images/project1.png" alt="만랩커피 이미지">
         </div>
-        <img src="./images/project1.png" alt="">
-      </div>
-      <div class="projectpart">
-        <div class="projecttxt">
-          <div class="topbtn">
-            <p>App Design</p>
-            <p>UI UX</p>
+        <div class="swiper-slide">
+          <div class="projecttxt">
+            <div class="topbtn">
+              <p>Web Design</p>
+              <p>ResponsibleWeb</p>
+            </div>
+            <h1>
+              04.<br>
+              Web Design<br>
+              <span>네번째</span>
+            </h1>
+            <div class="prhashtag">
+              <p># 리디자인</p>
+              <p># 개인작업</p>
+              <p># 퍼블리싱</p>
+              <p># 반응형</p>
+            </div>
+            <div class="morebtn">
+              <p><a href="#">View more</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
+              </svg>
+            </div>
           </div>
-          <h1>
-            04.<br>
-            Web Design<br>
-            <span>네번째</span>
-          </h1>
-          <div class="prhashtag">
-            <p># 리디자인</p>
-            <p># 개인작업</p>
-            <p># UIUX</p>
-            <p># 피그마</p>
-          </div>
-          <div class="morebtn">
-            <p><a href="#">View more</a></p>
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-              <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-            </svg>
-          </div>
+          <img src="./images/project2.png" alt="만랩커피 이미지">
         </div>
-        <img src="./images/project2.png" alt="">
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
-  <!-- div class="projectwrapper">
-    <div class="project-txt-wrapper">
-      <div class="project-info">
-        <div class="topbtn">
-          <p>App Design</p>
-          <p>UI UX</p>
-        </div>
-        <h1>도전 독서통장</h1>
-        <div class="prhashtag">
-          <p># 리디자인</p>
-          <p># 개인작업</p>
-          <p># UIUX</p>
-          <p># 피그마</p>
-        </div>
-        <div class="morebtn">
-          <p><a href="#">View more</a></p>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-            <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-          </svg>
-        </div>
-      </div>
-      <div class="project-info">
-        <div class="topbtn">
-          <p>Web Design</p>
-          <p>ResponsibleWeb</p>
-        </div>
-        <h1>만랩커피</h1>
-        <div class="prhashtag">
-          <p># 리디자인</p>
-          <p># 개인작업</p>
-          <p># 퍼블리싱</p>
-          <p># 반응형</p>
-        </div>
-        <div class="morebtn">
-          <p><a href="#">View more</a></p>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-            <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-          </svg>
-        </div>
-      </div>
-      <div class="project-info">
-        <div class="topbtn">
-          <p>App Design</p>
-          <p>UI UX</p>
-        </div>
-        <h1>세번째 프로젝트명</h1>
-        <div class="prhashtag">
-          <p># 리디자인</p>
-          <p># 개인작업</p>
-          <p># UIUX</p>
-          <p># 피그마</p>
-        </div>
-        <div class="morebtn">
-          <p><a href="#">View more</a></p>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-            <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z" />
-          </svg>
-        </div>
-      </div>
-    </div>
-    <div class="project-img-wrapper">
-      <div class="project-img-wrap2">
-        <div class="work-image">
-          <img src="./images/project1.png" alt="">
-          <img src="./images/project2.png" alt="">
-          <img src="./images/project1.png" alt="">
-        </div>
-      </div>
-    </div>
-    </div> -->
 
 
   <!---- contact---->
-  <footer>
+  <footer id="contactpage">
     <h1>Contact <span>Me</span></h1>
     <ul class="contacticon">
       <li><a href="https://github.com/jieun822" target="_blank">github</a></li>
-      <li><a href="#">mail</a></li>
+      <li><a href="mailto:solvit0822@naver.com">mail</a></li>
       <li><a href="https://instagram.com/822days?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">instagram</a></li>
       <li><a href="#">portfolio</a></li>
     </ul>
-    <img src="./images/star4.png" alt="contact 큰 별">
+    <img src="./images/star4.png" alt="빙글 빙글 돌아가는 별3">
   </footer>
   <section class="arrowbtn">
-    <a href="#">
+    <a href="#" class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
         <path
           d="M262-367q-9-9-9.5-21t8.5-21l198-198q5-5 10-7t11-2q6 0 11 2t10 7l198 197q9 8 9 20.5t-9 21.5q-9 9-21.5 9t-21.5-9L480-543 304-366q-8 9-20.5 8.5T262-367Z" />
       </svg></a>
   </section>
+
+  <!---- 마우스 따라다니는 이벤트---->
+  <div class="cursor">
+    <!--<p>🍒</p>-->
+    <img src="./images/smile3.png" alt="주황색의 스마일 모양 이미지">
+  </div>
+
   <script>
     AOS.init();
+
+    $('.btn').on('click', (e) => {
+      e.preventDefault();
+      scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+
+    $(window).on('scroll', () => {
+      let scrollHt = $(document).scrollTop();
+
+      if (scrollHt > 240) {
+        $('.btn').css({ opacity: 1, pointerEvents: 'all' });
+      } else {
+        $('.btn').css({ opacity: 0, pointerEvents: 'none' });
+      }
+    })
+
+    // swiper
+    var swiper = new Swiper(".mySwiper", {
+      /*  spaceBetween: 30, */
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    // 마우스 이벤트
+    $(document).mousemove(function (e) {
+      var mouseX = e.pageX;
+      var mouseY = e.pageY;
+
+      $('.cursor').css({
+        left: mouseX + "px",
+        top: mouseY + "px"
+      })
+    })
+
+    const $text = document.querySelector(".typing .text");
+
+    // 글자 모음
+    const letters = [
+      "코드와 디자인을 연결하는",
+      "열정이 넘치는",
+      "포기하지 않는"
+    ];
+
+    // 글자 입력 속도
+    const speed = 100;
+    let i = 0;
+
+    // 타이핑 효과
+    const typing = async () => {
+      const letter = letters[i].split("");
+
+      while (letter.length) {
+        await wait(speed);
+        $text.innerHTML += letter.shift();
+      }
+
+      // 잠시 대기
+      await wait(800);
+
+      // 지우는 효과
+      remove();
+    }
+
+    // 글자 지우는 효과
+    const remove = async () => {
+      const letter = letters[i].split("");
+
+      while (letter.length) {
+        await wait(speed);
+
+        letter.pop();
+        $text.innerHTML = letter.join("");
+      }
+
+      // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
+      i = !letters[i + 1] ? 0 : i + 1;
+      typing();
+    }
+
+    // 딜레이 기능 ( 마이크로초 )
+    function wait(ms) {
+      return new Promise(res => setTimeout(res, ms))
+    }
+
+    // 초기 실행
+    setTimeout(typing, 1500);
+
   </script>
 
 </body>

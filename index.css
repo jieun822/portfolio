@@ -5,6 +5,13 @@
 /* 400=regular 500=medium 600=semibold */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap");
 
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 /* 변수 설정 */
 :root {
   --en-font: "Montserrat", sans-serif;
@@ -12,7 +19,14 @@
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
-  --ko-font2: "GmarketSansMedium";
+  --ko-font2: "NEXON Lv1 Gothic OTF";
+  --ko-font3: "Pretendard-Regular";
+}
+
+/* 드래그 */
+::selection {
+  background-color: #333333e0;
+  color: #fff;
 }
 
 /* 스크롤바 */
@@ -34,6 +48,7 @@ html {
 }
 body {
   color: #333;
+  overflow-x: hidden;
 }
 
 /****** nav ******/
@@ -41,7 +56,10 @@ nav {
   width: 100%;
   font-family: var(--en-font);
   font-weight: 500;
-  background-color: var(--bg-color2);
+  background-color: #f6eee3;
+  /*  position: sticky;
+  top: 0; */
+  z-index: 9999;
 }
 
 .navwrapper {
@@ -63,6 +81,7 @@ nav h1 img {
     transform: rotate(360deg);
   }
 }
+
 .hi img {
   width: 4.5vw;
   animation: rotate_logo 3s linear infinite;
@@ -138,19 +157,17 @@ header .hi {
   0% {
     top: 0;
   }
-
   25% {
-    top: -6vw;
+    top: -6.1vw;
   }
-
   50% {
-    top: -12vw;
+    top: -12.1vw;
   }
-
   72.5% {
-    top: -18vw;
+    top: -18.1vw;
   }
 }
+
 .connecting .line {
   position: relative;
 }
@@ -164,6 +181,32 @@ header .hi {
   left: 0;
   bottom: 15px;
   z-index: -9;
+}
+
+.lineeffect {
+  display: inline-block;
+  position: relative;
+}
+
+.connecting .pencilimg img {
+  width: 20vw;
+  position: absolute;
+  bottom: -0.5vw;
+  right: 37vw;
+  z-index: -999;
+  animation: pencil 1.5s linear infinite;
+}
+
+@keyframes pencil {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(-0deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
 }
 
 /****** about ******/
@@ -184,12 +227,16 @@ header .hi {
   display: flex;
   width: 80%;
   margin: 100px auto 0;
-  font-family: var(--ko-font);
+  font-family: var(--ko-font3);
 }
 
 .abouttxt {
   width: 50%;
   position: relative;
+}
+
+.abouttxt > p {
+  line-height: 1.4;
 }
 
 .star2 {
@@ -214,12 +261,13 @@ header .hi {
     transform: translate(-50%, -50%);
   }
   50% {
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -65%);
   }
 }
 
 .abouttxt h2 {
   font-size: 3vw;
+  line-height: 1.25;
 }
 
 .abouttxt p {
@@ -261,6 +309,33 @@ header .hi {
   color: #fff;
 }
 
+.typing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.8rem;
+}
+
+.text {
+  font-size: 3vw;
+}
+
+.text::after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  animation: cursor 0.9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #222;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}
+
 /****** skill ******/
 
 .skill {
@@ -274,7 +349,7 @@ header .hi {
 }
 
 .skilltitle li {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #222;
   display: flex;
   align-items: center;
   padding: 0px 60px;
@@ -299,7 +374,7 @@ header .hi {
 
 .skilltitle span {
   display: block;
-  font-family: var(--ko-font);
+  font-family: var(--ko-font3);
   line-height: 2;
   font-size: 1.2vw;
   font-weight: 500;
@@ -365,38 +440,61 @@ header .hi {
 .project {
   background-color: var(--bg-color2);
   border-radius: 30px 30px 0 0;
+  border-bottom: 3px solid var(--point-color);
+  padding-bottom: 20px;
 }
 
-.projectwrapper {
-  width: 100%;
-  margin: 0 auto;
+.project > h1 {
+  padding-top: 130px;
 }
 
-.projectpart {
+.swiper {
   width: 100%;
-  margin: 0 auto;
+  height: 90vh;
+}
+
+.swiper-slide {
   display: flex;
-  padding: 100px 0;
   justify-content: center;
   align-items: center;
-  border-radius: 50px 50px 0 0;
-  border-bottom: 3px solid #b25252;
-  /*  position: sticky;
-  top: 0;
-  margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+  margin: 0 auto;
+  width: 80%;
 }
 
-.projectpart:first-child {
-  padding-top: 70px;
-}
 .projecttxt {
   width: 40%;
-  position: relative;
 }
 
-.projectwrapper img {
+.swiper-slide img {
   width: 40%;
+  display: block;
+}
+
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+
+.swiper .swiper-button-prev {
+  padding-left: 50px;
+}
+
+.swiper-button-next {
+  padding-right: 50px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  font-size: 12px;
+  opacity: 1;
+  background: #b2525288;
+  transform: translateY(-25px);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: var(--point-color);
 }
 
 .topbtn {
@@ -428,7 +526,9 @@ header .hi {
 }
 
 .projecttxt span {
-  font-family: var(--ko-font);
+  font-family: var(--ko-font3);
+  font-weight: 500;
+  font-size: 3.5vw;
 }
 
 .prhashtag {
@@ -437,7 +537,7 @@ header .hi {
 }
 
 .prhashtag p {
-  font-family: var(--ko-font);
+  font-family: var(--ko-font3);
   font-weight: 500;
   font-size: 1.2vw;
 }
@@ -448,13 +548,13 @@ header .hi {
   justify-content: center;
   font-family: var(--en-font);
   background-color: #fff;
-  width: 12vw;
-  height: 3vw;
-  margin-top: 120px;
+  margin-top: 100px;
+  width: 13vw;
+  height: 3.4vw;
   border-radius: 30px;
   font-size: 1.3vw;
   cursor: pointer;
-  box-shadow: 4px 4px 1px #b25252;
+  box-shadow: 3px 4px 0 #b25252;
 }
 
 .morebtn a {
@@ -530,6 +630,7 @@ footer img {
   position: absolute;
   left: 14vw;
   bottom: 4vw;
+  animation: rotate_logo 8s linear infinite;
 }
 
 .arrowbtn a {
@@ -543,4 +644,26 @@ footer img {
   z-index: 9999;
   bottom: 3vw;
   right: 3vw;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.arrowbtn a:hover {
+  transform: translateY(-7px);
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 3vw;
+  height: 3vw;
+  transform: translate(-100%, 30%);
+}
+
+.cursor p {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
 }
