@@ -464,9 +464,8 @@ header .hi {
 .projecttxt {
   width: 40%;
 }
-
-.swiper-slide img {
-  width: 40%;
+.swiper-slide > a {
+  width: 35%;
   display: block;
 }
 
