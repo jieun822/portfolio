@@ -445,7 +445,7 @@ header .hi {
 }
 
 .project > h1 {
-  padding-top: 130px;
+  padding-top: 6.771vw;
 }
 
 .swiper {
@@ -465,7 +465,7 @@ header .hi {
   width: 40%;
 }
 .swiper-slide > a {
-  width: 35%;
+  width: 38%;
   display: block;
 }
 
@@ -547,7 +547,7 @@ header .hi {
   justify-content: center;
   font-family: var(--en-font);
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 5.208vw;
   width: 13vw;
   height: 3.4vw;
   border-radius: 30px;
@@ -578,7 +578,7 @@ header .hi {
 footer {
   background-color: var(--bg-color1);
   text-align: center;
-  padding: 150px 0 180px;
+  padding: 7.813vw 0 9.375vw;
   color: var(--point-color);
   font-family: var(--en-font);
   position: relative;
