@@ -353,7 +353,7 @@ header .hi {
   display: flex;
   align-items: center;
   padding: 0px 60px;
-  height: 13vw;
+  height: 14vw;
   transition: 0.3s;
 }
 .skilltitle li:hover {
@@ -658,7 +658,7 @@ footer img {
   z-index: 9999;
   width: 3vw;
   height: 3vw;
-  transform: translate(-100%, 30%);
+  transform: translate(-50%, 10%);
 }
 
 .cursor p {

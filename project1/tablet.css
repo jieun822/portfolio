@@ -6,6 +6,14 @@ header .header-wrapper {
   height: 80px;
 }
 
+.hamburger_btn {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 header h1 {
   width: 180px;
 }
@@ -37,7 +45,7 @@ header nav .global-nav a {
   padding: 0 15px;
 }
 
-header .header-button {
+.header-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +57,7 @@ header .header-button {
   border-radius: 30px;
 }
 
-header .header-button svg {
+.header-button svg {
   width: 20px;
   fill: var(--main-color);
 }

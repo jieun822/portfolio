@@ -28,7 +28,7 @@
   <!--  피씨 버전 -->
   <link rel="stylesheet" href="./pc.css" media="(width >= 1200px)">
   <!-- 제이쿼리 파일 -->
-  <script src="./common/style/jquery-3.7.0.min.js"></script>
+  <script src="../common/style/jquery-3.7.0.min.js"></script>
   <!-- swiper.js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- 내가 쓴 js -->
@@ -39,7 +39,7 @@
 <body>
   <header>
     <div class="header-wrapper">
-      <h1><a href="./index.html"><img src="./images/logo.png" alt="만랩커피 로고"></a></h1>
+      <h1><a href="#"><img src="./images/logo.png" alt="만랩커피 로고"></a></h1>
       <nav>
         <menu class="global-nav">
           <li><a href="#">about</a></li>
@@ -48,11 +48,25 @@
           <li><a href="#">매장찾기</a></li>
           <li><a href="#">가맹문의</a></li>
         </menu>
-        <!--햄버거 메뉴 아이콘-->
-        <a href="#" class="mobile-btn">
-          <span>모바일메뉴</span>
-        </a>
       </nav>
+      <!-- --- 햄버거메뉴 ---
+      <div class="hamburger_btn">
+        <label class="container">
+          <input type="checkbox" class="checkbox">
+          <div class="checkmark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div> -->
+      <!--  <ul class="menu">
+        <li><a href="#">about</a></li>
+        <li><a href="#">스페셜</a></li>
+        <li><a href="#">메뉴소개</a></li>
+        <li><a href="#">매장찾기</a></li>
+        <li><a href="#">가맹문의</a></li>
+      </ul> -->
       <div class="header-button">
         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
           <path
@@ -62,6 +76,8 @@
       </div>
     </div>
   </header>
+
+
 
   <!--------fixed 아이콘 두개-------->
   <seciton class="fix">
@@ -147,50 +163,16 @@
             <figcaption>아인슈페너</figcaption>
           </figure>
         </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="./images/menu6.png" alt="아인슈페너">
+            <figcaption>플랫화이트</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-    <!-- <div class="arrivals-img">
-      <figure>
-        <img src="./images/menu1.png" alt="생딸기 케이크 라떼">
-        <figcaption>생딸기 케이크 라떼</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/menu2.png" alt="토피넛크림라떼">
-        <figcaption>토피넛크림라떼</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/menu3.png" alt="10000라떼">
-        <figcaption><span>10000 라떼</span>진한 에스프레소의 맛과 바닐라 슈가의 <br>건강한 단맛이 어우러진 시그니처 크림라떼</figcaption>
-      </figure>
-      <figure class="best">
-        <a href="#">Best</a>
-        <img src="./images/menu4.png" alt="말차 플랫">
-        <figcaption>말차 플랫</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/menu5.png" alt="아인슈페너">
-        <figcaption>아인슈페너</figcaption>
-      </figure>
-    </div>
-    <div class="bestmenu">
-      <a href="#">Best</a>
-    </div>
-    <div class="arrowbutton">
-      <a href="#" class="left">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-          <path
-            d="M372-108 21-459q-5-5-7-10t-2-11q0-6 2-11t7-10l351-351q11-11 28-11t28 11q12 12 12 28.5T428-795L113-480l315 315q12 12 11.5 28.5T428-109q-12 12-28.5 12T372-108Z" />
-        </svg>
-      </a>
-      <a href="#" class="right">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-          <path
-            d="M276-111q-11-12-11.5-28t11.5-28l315-315-315-315q-11-11-11.5-27.5T276-853q11-12 27.5-12.5T332-854l351 351q5 5 7 10t2 11q0 6-2 11t-7 10L332-110q-11 11-27.5 11T276-111Z" />
-        </svg>
-      </a>
-    </div> -->
   </section>
 
   <!----news---->
