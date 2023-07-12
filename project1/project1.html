@@ -17,6 +17,8 @@
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <!-- 초기화 -->
   <link rel="stylesheet" href="../common/style/reset.css">
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!--  공통 스타일 -->
   <link rel="stylesheet" href="./style.css">
   <!-- index 스타일(모바일)-->
@@ -25,6 +27,12 @@
   <link rel="stylesheet" href="./tablet.css" media="(width >= 768px)">
   <!--  피씨 버전 -->
   <link rel="stylesheet" href="./pc.css" media="(width >= 1200px)">
+  <!-- 제이쿼리 파일 -->
+  <script src="./common/style/jquery-3.7.0.min.js"></script>
+  <!-- swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 내가 쓴 js -->
+  <script defer src="./project1.js"></script>
 
 </head>
 
@@ -106,7 +114,44 @@
   <!----arrivals---->
   <section class="arrivals">
     <h1 class="section-txt">New Arrivals</h1>
-    <div class="arrivals-img">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure>
+            <img src="./images/menu1.png" alt="생딸기 케이크 라떼">
+            <figcaption>생딸기 케이크 라떼</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="./images/menu2.png" alt="토피넛크림라떼">
+            <figcaption>토피넛크림라떼</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="./images/menu3.png" alt="10000라떼">
+            <figcaption>10000 라떼</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="best">
+            <a href="#">Best</a>
+            <img src="./images/menu4.png" alt="말차 플랫">
+            <figcaption>말차 플랫</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="./images/menu5.png" alt="아인슈페너">
+            <figcaption>아인슈페너</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- <div class="arrivals-img">
       <figure>
         <img src="./images/menu1.png" alt="생딸기 케이크 라떼">
         <figcaption>생딸기 케이크 라떼</figcaption>
@@ -145,7 +190,7 @@
             d="M276-111q-11-12-11.5-28t11.5-28l315-315-315-315q-11-11-11.5-27.5T276-853q11-12 27.5-12.5T332-854l351 351q5 5 7 10t2 11q0 6-2 11t-7 10L332-110q-11 11-27.5 11T276-111Z" />
         </svg>
       </a>
-    </div>
+    </div> -->
   </section>
 
   <!----news---->
@@ -257,7 +302,7 @@
           <p>Copyright ⓒ 2023 만랩커피 All rights reserved<br>(주)만랩 | 사업자등록번호 887-87-00295</p>
         </div>
         <div class="portfolio">
-          <a href="#">포트폴리오 바로가기</a>
+          <a href="../index.html">포트폴리오 바로가기</a>
         </div>
       </div>
     </div>

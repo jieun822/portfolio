@@ -155,16 +155,29 @@ header .header-button {
   font-weight: 800;
 }
 
-.arrowbutton .left {
-  position: absolute;
-  top: 50%;
-  left: 3%;
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: #333;
 }
 
-.arrowbutton .right {
+.best {
+  position: relative;
+  z-index: 99;
+}
+.best a {
+  font-family: "Rubik";
+  display: block;
+  background-color: #939df4;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 5px 5px #000;
   position: absolute;
-  top: 50%;
-  right: 3%;
+  top: 45px;
+  right: 22%;
+  transform: rotate(-15deg);
+  z-index: -9;
 }
 
 /****** news ******/

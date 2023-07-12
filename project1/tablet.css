@@ -126,50 +126,8 @@ header .header-button svg {
 .arrivals {
   padding: 75px 0 50px;
 }
-.section-txt {
-  font-size: 2.2rem;
-}
-
-.arrivals-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 85%;
-  margin: 40px auto;
-}
-
-.arrivals-img figcaption {
-  transform: translateX(-5px);
-}
-.arrivals-img figure:nth-child(1) {
-  display: none;
-}
-
-.arrivals-img figure:nth-child(2) {
-  display: block;
-  margin: 0 auto;
-  width: 120%;
-}
-.arrivals-img figure:nth-child(3) {
-  display: block;
-  margin: 0 auto;
-  width: 180%;
-}
-
-.arrivals-img figure:nth-child(4) {
-  display: block;
-  margin: 0 auto;
-  width: 120%;
-}
-
-.arrivals-img figure:nth-child(5) {
-  display: none;
-}
-
-/* 바닐라 크림 어쩌고 */
-.arrivals-img figure figcaption {
-  white-space: nowrap;
-  text-align: center;
+.swiper {
+  padding: 50px 0;
 }
 
 .best {
