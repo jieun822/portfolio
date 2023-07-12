@@ -236,7 +236,7 @@ header .hi {
 }
 
 .abouttxt > p {
-  line-height: 1.4;
+  line-height: 1.43;
 }
 
 .star2 {
@@ -344,7 +344,7 @@ header .hi {
 
 .skillwrapper {
   width: 80%;
-  margin: 80px auto 0;
+  margin: 5.729vw auto 0;
   padding-bottom: 200px;
 }
 
@@ -450,7 +450,7 @@ header .hi {
 
 .swiper {
   width: 100%;
-  height: 90vh;
+  height: 87vh;
 }
 
 .swiper-slide {
@@ -465,7 +465,7 @@ header .hi {
   width: 40%;
 }
 .swiper-slide > a {
-  width: 38%;
+  width: 35%;
   display: block;
 }
 
@@ -548,8 +548,8 @@ header .hi {
   font-family: var(--en-font);
   background-color: #fff;
   margin-top: 5.208vw;
-  width: 13vw;
-  height: 3.4vw;
+  width: 12.4vw;
+  height: 3vw;
   border-radius: 30px;
   font-size: 1.3vw;
   cursor: pointer;
