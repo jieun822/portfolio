@@ -4,7 +4,7 @@
 /* fonts */
 
 /* 400=regular 500=medium 600=semibold */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Rubik:wght@700;800&display=swap");
 
 @font-face {
   font-family: "Pretendard-Regular";
@@ -13,6 +13,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /* 변수 설정 */
 :root {
   --en-font: "Montserrat", sans-serif;
@@ -20,8 +21,10 @@
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
-  --ko-font2: "NEXON Lv1 Gothic OTF";
+  --ko-font2: "NanumSquareRound";
   --ko-font3: "Pretendard-Regular";
+  --point-txt: #9e4b4b;
+  --btn-color: #f3e7d6e5;
 }
 
 /* 드래그 */
@@ -51,6 +54,23 @@ body {
   color: #333;
   font-family: var(--ko-font3);
   background-color: var(--bg-color1);
+}
+
+.dot {
+  position: relative;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.dot::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: var(--point-color);
+  border-radius: 50%;
 }
 
 /****** nav ******/
@@ -116,6 +136,7 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
 .headertxt h1 {
   font-family: var(--en-font);
   font-size: 3vw;
@@ -150,7 +171,6 @@ header {
   position: relative;
 }
 
-/***** 글자 앞 동그라미 before *****/
 .headertxt-ul li::before {
   content: "";
   display: inline-block;
@@ -160,4 +180,352 @@ header {
   vertical-align: middle;
   background: var(--point-color);
   border-radius: 50%;
+}
+
+/****** overview ******/
+.overview {
+  padding: 12vw 0 0;
+}
+
+/* 섹션별 밑 여백 조정할때 */
+.common_wrap {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  gap: 10vw;
+  border-bottom: 1px solid #333;
+  padding: 0 7vw 10vw;
+}
+
+.common_wrap h1 {
+  font-size: 3.3vw;
+  font-family: var(--en-font);
+  font-weight: bold;
+}
+
+.common_wrap .pencileffect {
+  position: absolute;
+  top: -1.7vw;
+  left: 5.5vw;
+  width: 25%;
+  z-index: -999;
+}
+
+.overview_txt {
+  width: 55%;
+  transform: translateX(3vw);
+}
+
+.overview_txt .overview_txt_ul li {
+  position: relative;
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+
+.overview_txt .overview_txt_ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.6vw;
+  height: 0.6vw;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: var(--point-color);
+  border-radius: 50%;
+}
+
+.overview_txt .overview_txt_ul li p {
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+  font-weight: 300;
+}
+
+.overview_txt .overview_txt_ul li:first-child p:last-child {
+  padding: 0 0 0 1.3vw;
+  margin-top: -10px;
+}
+
+.overview_txt .overview_txt_ul li strong {
+  color: var(--point-txt);
+}
+
+.overview_txt .overview_txt_ul li:nth-child(3) p {
+  background-color: var(--btn-color);
+  margin-top: 1vw;
+  margin-left: 1vw;
+  width: 5.5vw;
+  height: 2.5vw;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 4px 4px 10px #3333333a;
+  border-radius: 30px;
+  font-family: var(--en-font);
+  font-weight: 500;
+}
+
+/****** technology ******/
+.technology {
+  padding: 10vw 0 0;
+}
+
+.technology .common_wrap .pencileffect {
+  width: 28%;
+  top: -2vw;
+}
+
+.technology_txt {
+  width: 50%;
+}
+
+.technology_txt p {
+  margin-bottom: 2vw;
+}
+
+.technology_ul1,
+.technology_ul2 {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+.technology_ul2 {
+  margin-bottom: 0;
+}
+
+.technology_ul1 li,
+.technology_ul2 li {
+  background-color: var(--btn-color);
+  padding: 0.8vw 1.5vw;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px #3333333a;
+  font-family: var(--en-font);
+  font-weight: 500;
+  font-size: 0.95vw;
+}
+
+/****** styleguide ******/
+.styleguide {
+  padding: 10vw 0 0;
+}
+
+.styleguide .pencileffect {
+  width: 27%;
+  left: 5.7vw;
+  top: -1.8vw;
+}
+
+.styleguide .styleguide_txt {
+  width: 50%;
+}
+.styleguide_txt .styleguide_ul li {
+  margin-bottom: 2vw;
+}
+
+.styleguide_txt .styleguide_ul li:first-child p {
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+  font-weight: 300;
+}
+
+.styleguide_txt .styleguide_ul li p strong {
+  color: var(--point-txt);
+}
+.styleguide_txt .styleguide_ul li:nth-child(2) .keyword-wrap {
+  margin: 1.1vw 0 0 1.3vw;
+}
+.styleguide_txt .styleguide_ul li:nth-child(2) .keyword-wrap span {
+  font-size: 1vw;
+  font-weight: 300;
+  display: inline-block;
+  border: 1.5px solid #333;
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 1vw;
+}
+
+.styleguide_txt .styleguide_ul img {
+  width: 60%;
+  display: block;
+  margin: 0.5vw 0 0 1vw;
+}
+
+.styleguide .typo-wrap {
+  margin: 3vw 0 0 2vw;
+  display: flex;
+  font-size: 1vw;
+  text-align: center;
+  gap: 3vw;
+  line-height: 2;
+}
+
+.styleguide .typo-wrap h3 {
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.7vw;
+}
+
+.styleguide .typo-wrap .typo-left {
+  font-family: var(--ko-font2);
+}
+
+.styleguide .typo-wrap .typo-left p:first-child,
+.styleguide .typo-wrap .typo-right p:first-child {
+  font-weight: 700;
+}
+
+.styleguide .typo-wrap .typo-left p:last-child,
+.styleguide .typo-wrap .typo-right p:last-child {
+  font-weight: 800;
+}
+
+.styleguide .typo-wrap .typo-right {
+  font-family: Rubik, sans-serif;
+}
+
+/****** publishing ******/
+.publishing {
+  padding: 10vw 0 0;
+}
+.publishing .pencileffect {
+  left: 5.7vw;
+  width: 26.5%;
+}
+.publishing .publishing_txt h3 {
+  margin-bottom: 2vw;
+}
+
+.publishing_ul {
+  line-height: 2.4;
+  font-size: 1vw;
+  margin-left: 1.3vw;
+  font-weight: 500;
+}
+
+/****** problem & solution ******/
+.problem_solution {
+  padding: 10vw 0 0;
+}
+
+.problem_solution .pencileffect {
+  width: 27%;
+  top: -0.7vw;
+}
+
+.problem_solution .common_wrap h1 {
+  line-height: 1;
+}
+.problem_solution .common_wrap h1 span {
+  margin-right: 5px;
+}
+.problem .problem_solution_txt {
+}
+
+.problem_solution_ul li {
+  line-height: 1.5;
+  font-size: 1vw;
+  margin-top: 3vw;
+  margin-left: 1.3vw;
+  font-weight: 600;
+}
+
+.problem_solution_ul li p {
+  font-size: 0.89vw;
+  padding: 0.5vw 0 0 1.1vw;
+  font-weight: 300;
+  background-color: var(--bg-color1);
+}
+
+.problem_solution_ul li strong {
+  color: var(--point-txt);
+}
+
+/****** review  ******/
+.review {
+  padding: 10vw 0 0;
+}
+
+.review .pencileffect {
+  width: 22%;
+  top: -1.2vw;
+  left: 4.8vw;
+}
+.review_txt h3 {
+  padding-bottom: 2vw;
+}
+.review_txt p {
+  line-height: 1.5;
+  font-size: 1vw;
+  margin-top: 2vw;
+  margin-left: 1.3vw;
+}
+
+.review .common_wrap {
+  border-bottom: none;
+}
+
+/****** footer  ******/
+.footer_ul {
+  display: flex;
+  width: 90%;
+  margin: 5vw auto;
+  margin-bottom: 6vw;
+  text-align: center;
+  gap: 2vw;
+  font-family: var(--en-font);
+}
+
+.footer_ul li {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8vw;
+  border: 3px solid #333;
+  width: 23vw;
+  padding: 1vw 0;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.footer_ul li a {
+  width: 70%;
+}
+
+.footer_ul li svg {
+  fill: #333;
+}
+.footer_ul li:nth-child(2) {
+  border-color: #b25252;
+  color: #b25252;
+}
+
+.footer_ul li:hover {
+  transform: translateY(-10px);
+}
+/****** 하단버튼  ******/
+.arrowbtn a {
+  display: block;
+  background-color: #b25252;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  fill: var(--bg-color1);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 3vw;
+  right: 3vw;
+}
+
+.arrowbtn a:hover {
+  transform: translateY(-7px);
 }
