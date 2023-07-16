@@ -137,6 +137,10 @@ header {
   justify-content: center;
 }
 
+.headertxt span {
+  font-family: var(--en-font);
+}
+
 .headertxt h1 {
   font-family: var(--en-font);
   font-size: 3vw;
@@ -321,8 +325,15 @@ header {
 .styleguide .styleguide_txt {
   width: 50%;
 }
+
 .styleguide_txt .styleguide_ul li {
   margin-bottom: 2vw;
+  font-family: var(--en-font);
+}
+
+.styleguide_txt .styleguide_ul li p,
+.styleguide_txt .styleguide_ul li span {
+  font-family: var(--ko-font3);
 }
 
 .styleguide_txt .styleguide_ul li:first-child p {
@@ -331,6 +342,7 @@ header {
   line-height: 1.5;
   padding: 1vw 0 0 1.3vw;
   font-weight: 300;
+
 }
 
 .styleguide_txt .styleguide_ul li p strong {
@@ -488,10 +500,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   border: 3px solid #333;
-  width: 23vw;
-  padding: 1vw 0;
+  width: 22.5vw;
+  padding: 0.8vw 0;
   font-weight: 500;
   border-radius: 50px;
   transition: 0.3s;
@@ -503,6 +515,7 @@ header {
 
 .footer_ul li svg {
   fill: #333;
+  width: 40px; height: 40px;
 }
 .footer_ul li:nth-child(2) {
   border-color: #b25252;
