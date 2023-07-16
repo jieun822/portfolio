@@ -5,14 +5,6 @@
 /* 400=regular 500=medium 600=semibold */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Rubik:wght@700;800&display=swap");
 
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* 변수 설정 */
 :root {
   --en-font: "Montserrat", sans-serif;
@@ -21,7 +13,7 @@
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
   --ko-font2: "NanumSquareRound";
-  --ko-font3: "Pretendard-Regular";
+  --ko-font3: "Pretendard Variable";
   --point-txt: #9e4b4b;
   --btn-color: #f3e7d6e5;
 }
@@ -65,8 +57,8 @@ body {
 .dot::before {
   content: "";
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 0.75vw;
+  height: 0.75vw;
   margin: -2px 10px 0 0;
   vertical-align: middle;
   background: var(--point-color);
@@ -173,13 +165,14 @@ header {
 
 .headertxt-ul li {
   position: relative;
+  font-weight: 500;
 }
 
 .headertxt-ul li::before {
   content: "";
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 0.75vw;
+  height: 0.75vw;
   margin: -2px 10px 0 0;
   vertical-align: middle;
   background: var(--point-color);
@@ -228,23 +221,22 @@ header {
   margin-bottom: 2vw;
 }
 
+.overview_txt .overview_txt_ul li p {
+  font-weight: 400;
+  font-size: 1.05vw;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
 .overview_txt .overview_txt_ul li::before {
   content: "";
   display: inline-block;
-  width: 0.6vw;
-  height: 0.6vw;
+  width: 0.75vw;
+  height: 0.75vw;
   margin: -2px 10px 0 0;
   vertical-align: middle;
   background: var(--point-color);
   border-radius: 50%;
-}
-
-.overview_txt .overview_txt_ul li p {
-  font-weight: 300;
-  font-size: 1vw;
-  line-height: 1.5;
-  padding: 1vw 0 0 1.3vw;
-  font-weight: 300;
 }
 
 .overview_txt .overview_txt_ul li:first-child p:last-child {
@@ -337,12 +329,10 @@ header {
 }
 
 .styleguide_txt .styleguide_ul li:first-child p {
-  font-weight: 300;
-  font-size: 1vw;
+  font-size: 1.05vw;
   line-height: 1.5;
   padding: 1vw 0 0 1.3vw;
-  font-weight: 300;
-
+  font-weight: 400;
 }
 
 .styleguide_txt .styleguide_ul li p strong {
@@ -352,8 +342,8 @@ header {
   margin: 1.1vw 0 0 1.3vw;
 }
 .styleguide_txt .styleguide_ul li:nth-child(2) .keyword-wrap span {
-  font-size: 1vw;
-  font-weight: 300;
+  font-size: 1.05vw;
+  font-weight: 500;
   display: inline-block;
   border: 1.5px solid #333;
   width: 5vw;
@@ -373,7 +363,7 @@ header {
 .styleguide .typo-wrap {
   margin: 3vw 0 0 2vw;
   display: flex;
-  font-size: 1vw;
+  font-size: 1.05vw;
   text-align: center;
   gap: 3vw;
   line-height: 2;
@@ -418,7 +408,7 @@ header {
 
 .publishing_ul {
   line-height: 2.4;
-  font-size: 1vw;
+  font-size: 1.05vw;
   margin-left: 1.3vw;
   font-weight: 500;
 }
@@ -442,16 +432,16 @@ header {
 
 .problem_solution_ul li {
   line-height: 1.5;
-  font-size: 1vw;
+  font-size: 1.05vw;
   margin-top: 3vw;
   margin-left: 1.3vw;
   font-weight: 600;
 }
 
 .problem_solution_ul li p {
-  font-size: 0.89vw;
+  font-size: 1vw;
+  font-weight: 400;
   padding: 0.5vw 0 0 1.1vw;
-  font-weight: 300;
   background-color: var(--bg-color1);
 }
 
@@ -474,7 +464,7 @@ header {
 }
 .review_txt p {
   line-height: 1.5;
-  font-size: 1vw;
+  font-size: 1.05vw;
   margin-top: 2vw;
   margin-left: 1.3vw;
 }
@@ -524,6 +514,7 @@ header {
 .footer_ul li:hover {
   transform: translateY(-10px);
 }
+
 /****** 하단버튼  ******/
 .arrowbtn a {
   display: block;
