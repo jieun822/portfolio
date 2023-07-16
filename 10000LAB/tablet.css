@@ -188,6 +188,10 @@ header nav .global-nav a {
   animation: scroll 40s linear infinite;
 }
 
+.slide{
+  padding: 15px 10px;
+}
+
 .slide .train-card img {
   border: 3px solid #222;
 }
