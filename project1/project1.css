@@ -331,6 +331,10 @@ header {
   font-size: 1.05vw;
 }
 
+.asis_right li {
+  font-weight: 600;
+}
+
 .asis_left li, .asis_right li {
   padding-bottom: 4vw;
 }
@@ -394,6 +398,7 @@ header {
 .uxvision-txt {
   padding-top: 10vw;
 }
+
 .uxvision-txt h3 {
   font-family: var(--en-font);
 }
@@ -412,7 +417,6 @@ header {
   border-radius: 100px;
   width: 50%;
   box-shadow: 4px 4px 30px #3333332a;
-  
 }
 
 /****** wireframe ******/
@@ -569,4 +573,9 @@ header {
 
 .styleguide .typo-left .fourth {
   font-weight: 700;
+}
+
+/****** prototype ******/
+.prototype {
+  padding: 10vw 0 0 0;
 }
