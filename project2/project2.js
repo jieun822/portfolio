@@ -20,3 +20,14 @@ $(window).on("scroll", () => {
     $(".btn").css({ opacity: 0, pointerEvents: "none" });
   }
 });
+
+// 마우스 이벤트
+$(document).mousemove(function (e) {
+  var mouseX = e.pageX;
+  var mouseY = e.pageY;
+
+  $(".cursor").css({
+    left: mouseX + "px",
+    top: mouseY + "px",
+  });
+}); 
