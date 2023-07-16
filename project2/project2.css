@@ -394,6 +394,11 @@ header {
   font-family: Rubik, sans-serif;
 }
 
+.styleguide .typo-wrap .typo-left h3,
+.styleguide .typo-wrap .typo-left p{
+  font-family: var(--ko-font2);
+}
+
 /****** publishing ******/
 .publishing {
   padding: 10vw 0 0;
