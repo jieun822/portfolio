@@ -1,5 +1,4 @@
 @charset "utf-8";
-@charset "utf-8";
 
 /* fonts */
 
@@ -54,6 +53,7 @@ body {
   color: #333;
   font-family: var(--ko-font3);
   background-color: var(--bg-color1);
+  overflow-x: hidden;
 }
 
 .dot {
@@ -399,7 +399,8 @@ header {
   font-weight: 800;
 }
 
-.styleguide .typo-wrap .typo-right {
+.styleguide .typo-wrap .typo-right h3,
+.styleguide .typo-wrap .typo-right p{
   font-family: Rubik, sans-serif;
 }
 
@@ -437,8 +438,6 @@ header {
 }
 .problem_solution .common_wrap h1 span {
   margin-right: 5px;
-}
-.problem .problem_solution_txt {
 }
 
 .problem_solution_ul li {
