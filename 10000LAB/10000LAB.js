@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
 
   slidesPerView: "5", // 한 슬라이드에 보여줄 갯수
 
@@ -25,7 +25,6 @@ var swiper = new Swiper(".mySwiper", {
     1200: { slidesPerView: 5 },
   },
 });
-
 
 // 메뉴 토글 버튼
 let num = 0;
