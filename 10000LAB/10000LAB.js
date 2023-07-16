@@ -1,5 +1,4 @@
 var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30, // 슬라이드 사이 여백
 
   slidesPerView: "5", // 한 슬라이드에 보여줄 갯수
 
@@ -27,10 +26,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-/* // 햄버거메뉴 열고 닫기
-$(".checkbox").on("click", () => {
-  $(".header").toggleClass("active");
-  $(".logo").toggleClass("active");
-  $(".checkmark span").toggleClass("active");
-  $(".menu").slideToggle(); // == display: block
-}); */
+
+// 메뉴 토글 버튼
+let num = 0;
+$(".menuBtn").on("click", () => {
+  if (num % 2 == 0) {
+    $("#navigator").stop().slideDown();
+    $("#gnbBtn").addClass("on");
+
+    num++;
+  } else {
+    $("#navigator").stop().slideUp();
+    $("#gnbBtn").removeClass("on");
+    num++;
+  }
+});

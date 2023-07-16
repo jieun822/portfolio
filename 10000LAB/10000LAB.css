@@ -1,4 +1,7 @@
 @charset "utf-8";
+body {
+  overflow-x: hidden;
+}
 
 /***** header *****/
 .header-button {
@@ -9,104 +12,64 @@
   display: none;
 }
 
-.hamburger_btn {
-  margin: 0 20px;
-}
-
-.container input {
+header #gnbBtn {
   position: absolute;
-  opacity: 0;
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
   cursor: pointer;
-  height: 0;
-  width: 0;
+  width: 20px;
+  height: 15px;
 }
-
-.container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 1.04vw;
-  user-select: none;
+/* 메뉴 버튼 */
+#gnbBtn.on .line2 {
+  display: none;
 }
-
-.checkmark {
-  position: relative;
+#gnbBtn.on .line1 {
+  top: 50%;
+  transform: rotate(45deg);
+}
+#gnbBtn.on .line3 {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.line {
+  width: 28px;
+  height: 2.5px;
+  background-color: #333;
+  position: absolute;
   top: 0;
-  left: 0;
-  height: 3em;
-  width: 1.3em;
+  transition: 0.3s;
+  border-radius: 30px;
 }
-
-.checkmark span {
-  width: 32px;
-  height: 3px;
-  background-color: rgb(0, 0, 0);
+.line2 {
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line3 {
+  top: auto;
+  bottom: 0;
+}
+/* 내비게이션 */
+#navigator {
+  display: none;
   position: absolute;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.checkmark span.active {
-  background-color: #fff;
-}
-
-.checkmark span:nth-child(1) {
-  top: 0%;
-}
-
-.checkmark span:nth-child(2) {
-  top: 50%;
-}
-
-.checkmark span:nth-child(3) {
-  top: 100%;
-}
-
-.container input:checked + .checkmark span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.container input:checked + .checkmark span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-.container input:checked + .checkmark span:nth-child(3) {
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  opacity: 0;
-}
-
-.menu {
-  padding: 20px 0;
-}
-
-.menu li {
+  top: 60px;
+  left: 0;
   width: 100%;
-  height: 25px;
-  padding: 20px;
-  display: grid;
-  place-content: center;
-  position: relative;
+  background-color: var(--bg-color1);
 }
-
-.menu li:hover {
-  background-color: #00bde728;
+#navigator li {
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: 2px solid #ddd;
+}
+#navigator li:hover {
+  color: var(--main-color);
+}
+#navigator li:last-child{
+  border-bottom: none;
 }
 
 /***** contents *****/
@@ -346,7 +309,7 @@
 
 .insta {
   background-color: var(--bg-color2);
-  padding: 60px 0;
+  padding: 50px 0 40px;
   image-rendering: -webkit-optimize-contrast;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -358,7 +321,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   white-space: nowrap;
 }
 
@@ -366,19 +329,55 @@
   width: 30px;
 }
 
-.insta-img {
-  overflow: hidden;
+ .slider{
+  margin: auto;
+  position:relative;
+  width: 120%;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  left:-10%;
+}
+
+.slide-track{
+  display:flex;
+  width: calc(200px * 12);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state:paused;
+}
+
+@keyframes scroll{
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-300px * 6));
+  }
+}
+
+.slide{
+  width: 300px;
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  align-items:center;
+  padding: 10px;
+  perspective:100px;
 }
 
-.insta-img img {
-  width: 26%;
-  border: 2px solid #000;
-  cursor: pointer;
+.slide .train-card img {
+  border: 2.8px solid #222;
 }
 
+.train-card{
+  width:100%;
+  transition:transform 0.5s;
+}
+
+.train-card:hover{
+  transform:translateZ(10px);
+}
 /****** youtube ******/
 
 .youtube {

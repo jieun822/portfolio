@@ -6,11 +6,11 @@ header .header-wrapper {
   height: 80px;
 }
 
-.hamburger_btn {
+#navigator {
   display: none;
 }
 
-.menu {
+.menuBtn {
   display: none;
 }
 
@@ -152,7 +152,7 @@ header nav .global-nav a {
   line-height: 30px;
   box-shadow: 5px 5px #000;
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 22%;
   transform: rotate(-15deg);
   z-index: -9;
@@ -171,20 +171,25 @@ header nav .global-nav a {
 }
 
 /****** insta ******/
+.insta {
+  padding: 60px 0;
+}
 .insta .insta-txt {
   padding-bottom: 20px;
-}
-.insta-img img:nth-child(n + 5):nth-child(-n + 7) {
-  display: block;
-}
-
-.insta-img img {
-  width: 180px;
-  border: 2.5px solid #000;
 }
 
 .insta-txt svg {
   width: 40px;
+}
+
+.slide-track{
+  display:flex;
+  width: calc(250px * 12);
+  animation: scroll 40s linear infinite;
+}
+
+.slide .train-card img {
+  border: 3px solid #222;
 }
 
 /****** youtube ******/
