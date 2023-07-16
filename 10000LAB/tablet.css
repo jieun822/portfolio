@@ -6,7 +6,11 @@ header .header-wrapper {
   height: 80px;
 }
 
-#navigator {
+#gnbBtn {
+  display: none;
+}
+
+#navigator li{
   display: none;
 }
 

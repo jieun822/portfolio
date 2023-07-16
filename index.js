@@ -39,7 +39,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // 마우스 이벤트
- $(document).mousemove(function (e) {
+$(document).mousemove(function (e) {
   var mouseX = e.pageX;
   var mouseY = e.pageY;
 
@@ -47,7 +47,7 @@ var swiper = new Swiper(".mySwiper", {
     left: mouseX + "px",
     top: mouseY + "px",
   });
-}); 
+});  
 
 
 
