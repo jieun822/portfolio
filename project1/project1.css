@@ -5,7 +5,6 @@
 /* 400=regular 500=medium 600=semibold */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Rubik:wght@700;800&display=swap");
 
-
 /* 변수 설정 */
 :root {
   --en-font: "Montserrat", sans-serif;
@@ -145,7 +144,7 @@ header {
   content: "";
   width: 40vw;
   height: 2vh;
-  background-color: #ACC0D9;
+  background-color: #acc0d9;
   position: absolute;
   left: -0.5vw;
   bottom: -0.03vw;
@@ -284,7 +283,7 @@ header {
 
 .publishing_txt h3 {
   padding-bottom: 1vw;
-} 
+}
 
 .publishing_ul li {
   padding-bottom: 1vw;
@@ -306,7 +305,7 @@ header {
   width: 27%;
 }
 .asis_txt {
- width: 55%;
+  width: 55%;
 }
 
 .asis_txt p {
@@ -335,24 +334,26 @@ header {
   font-weight: 600;
 }
 
-.asis_left li, .asis_right li {
+.asis_left li,
+.asis_right li {
   padding-bottom: 4vw;
 }
 
-.asis_middle li{
+.asis_middle li {
   padding-bottom: 2.7vw;
 }
 
 .asis_left li:last-child,
 .asis_right li:last-child,
-.asis_middle li:last-child{
+.asis_middle li:last-child {
   padding-bottom: 0;
 }
 
 .asis_middle svg {
   fill: #628987;
 }
-.asis_wrap h2, .asis_wrap h3 {
+.asis_wrap h2,
+.asis_wrap h3 {
   position: absolute;
   font-family: var(--en-font);
   font-weight: 500;
@@ -362,7 +363,7 @@ header {
   border-radius: 30px;
 }
 
-.asis_wrap h2{
+.asis_wrap h2 {
   top: -2vw;
   left: 9vw;
   background-color: #9f9f9f;
@@ -370,10 +371,10 @@ header {
 }
 
 .asis_wrap h3 {
- top: -2vw;
- right: 11vw;
- background-color: #628987;
- color: #fff;
+  top: -2vw;
+  right: 11vw;
+  background-color: #628987;
+  color: #fff;
 }
 
 /****** ux-vison ******/
@@ -452,18 +453,16 @@ header {
   position: relative;
 }
 
-.wireimg-wrap img{
+.wireimg-wrap img {
   width: 80%;
   margin: 0 auto;
   display: block;
-  image-rendering: -webkit-optimize-contrast;
-  transform: translateZ(0);
   padding-top: 6vw;
 }
 
 .wireimg-wrap .title {
   position: absolute;
-  top:1.5vw;
+  top: 1.5vw;
   font-size: 1.1vw;
   background-color: var(--btn-color);
   width: 6.5vw;
@@ -559,7 +558,7 @@ header {
   font-size: 1.1vw;
 }
 
-.styleguide .typo-left .first{
+.styleguide .typo-left .first {
   font-weight: 400;
 }
 
@@ -578,4 +577,165 @@ header {
 /****** prototype ******/
 .prototype {
   padding: 10vw 0 0 0;
+}
+
+.prototype .common_wrap {
+  border-bottom: none;
+}
+
+.protoimg_wrap {
+  margin: 0 auto;
+}
+
+.proto_common:nth-child(1) img {
+  width: 17%;
+}
+
+.protoimg_wrap img {
+  width: 30%;
+}
+
+.proto_common {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 14vw;
+}
+
+.protoimg_txt {
+  width: 40%;
+}
+
+.protoimg_txt h1 {
+  font-family: var(--en-font);
+  font-weight: 700;
+  font-size: 2vw;
+  padding-bottom: 1vw;
+}
+
+.protoimg_txt p {
+  font-size: 1vw;
+  line-height: 1.5;
+}
+
+.proto_common:first-child img {
+  margin-left: 8vw;
+}
+
+.proto_common:nth-child(odd) .protoimg_txt {
+  margin-right: 3vw;
+}
+
+.proto_common:nth-child(even) .protoimg_txt {
+  margin-left: 9vw;
+}
+
+.proto_common:last-child {
+  padding-bottom: 0;
+}
+/****** review  ******/
+.review {
+  padding: 10vw 0 0;
+}
+
+.review .common_wrap {
+  border-top: 1px solid #333;
+  border-bottom: none;
+}
+
+.review_txt {
+  padding-top: 10vw;
+}
+
+.review .common_wrap h1 {
+  padding-top: 10vw;
+}
+
+.review .pencileffect {
+  width: 22%;
+  top: 8.6vw;
+  left: 4.8vw;
+}
+
+.review_txt h3 {
+  padding-bottom: 2vw;
+}
+.review_txt p {
+  line-height: 1.5;
+  font-size: 1vw;
+  margin-top: 2vw;
+  margin-left: 1.3vw;
+}
+
+/****** footer  ******/
+.footer_ul {
+  display: flex;
+  width: 90%;
+  margin: 5vw auto;
+  margin-bottom: 6vw;
+  text-align: center;
+  gap: 2vw;
+  font-family: var(--en-font);
+}
+
+.footer_ul li {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7vw;
+  border: 3px solid #333;
+  width: 22.5vw;
+  padding: 0.8vw 0;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.footer_ul li a {
+  width: 70%;
+}
+
+.footer_ul li svg {
+  fill: #333;
+  width: 40px;
+  height: 40px;
+}
+.footer_ul li:nth-child(2) {
+  border-color: #b25252;
+  color: #b25252;
+}
+
+.footer_ul li:hover {
+  transform: translateY(-10px);
+}
+
+/****** 하단버튼  ******/
+.arrowbtn a {
+  display: block;
+  background-color: #b25252;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  fill: var(--bg-color1);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 3vw;
+  right: 3vw;
+}
+
+.arrowbtn a:hover {
+  transform: translateY(-7px);
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3vw;
+  height: 3vw;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+  will-change: transform;
+  pointer-events: none;
 }

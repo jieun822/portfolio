@@ -390,12 +390,12 @@ header {
 }
 
 .styleguide .typo-wrap .typo-right h3,
-.styleguide .typo-wrap .typo-right p{
+.styleguide .typo-wrap .typo-right p {
   font-family: Rubik, sans-serif;
 }
 
 .styleguide .typo-wrap .typo-left h3,
-.styleguide .typo-wrap .typo-left p{
+.styleguide .typo-wrap .typo-left p {
   font-family: var(--ko-font2);
 }
 
@@ -509,7 +509,8 @@ header {
 
 .footer_ul li svg {
   fill: #333;
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .footer_ul li:nth-child(2) {
   border-color: #b25252;
@@ -547,5 +548,5 @@ header {
   transform: translate(-50%, 5%);
   z-index: 9;
   will-change: transform;
-  pointer-events:none;
+  pointer-events: none;
 }
