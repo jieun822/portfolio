@@ -12,8 +12,8 @@
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
-  --ko-font2: "NanumSquareRound";
-  --ko-font3: "Pretendard Variable";
+  --ko-font2: "NanumSquareRound", "맑은 고딕", sans-serif;
+  --ko-font3: "Pretendard Variable", "맑은 고딕", sans-serif;
   --point-txt: #9e4b4b;
   --btn-color: #f3e7d6e5;
 }

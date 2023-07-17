@@ -5,22 +5,14 @@
 /* 400=regular 500=medium 600=semibold */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap");
 
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 /* 변수 설정 */
 :root {
   --en-font: "Montserrat", sans-serif;
-  --ko-font: "Noto Sans KR", sans-serif;
+  --ko-font: "Noto Sans KR", "맑은 고딕", sans-serif;
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
-  --ko-font2: "NEXON Lv1 Gothic OTF";
-  --ko-font3: "Pretendard-Regular";
+  --ko-font3: "Pretendard Variable", "맑은 고딕", sans-serif;
 }
 
 /* 드래그 */
@@ -296,12 +288,13 @@ header .hi {
   border: 3px solid var(--point-color);
   font-weight: 500;
   border-radius: 100px;
-  padding: 5px 20px;
+  padding: 7px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-top: 30px;
+  font-size: 1.2vw;
 }
 
 .hashtag p:hover {
@@ -376,66 +369,10 @@ header .hi {
   display: block;
   font-family: var(--ko-font3);
   line-height: 2;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 500;
 }
 
-/****** skill ******/
-.text-wrapper {
-  background-color: var(--bg-color2);
-  height: 50vh;
-  background: #eee;
-  position: relative;
-  z-index: 0;
-}
-
-.text-container {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-}
-
-.h1 {
-  font-size: 120px;
-  word-break: keep-all;
-  color: #444;
-  transform: translateX(0px);
-  margin-left: 30%; /* começa no meio*/
-}
-
-/****** 흐르는텍스트 ******/
-.flow-text {
-  background-color: var(--bg-color2);
-  display: flex;
-  flex: 0 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: 0.3s;
-  font-size: 13vw;
-  font-weight: bold;
-  color: var(--point-color);
-  padding: 8vw 0;
-}
-
-.flow-text:hover .flow-wrap {
-  cursor: pointer;
-}
-.flow-wrap {
-  animation: textLoop 20s linear infinite;
-  padding-right: 1.4881vw;
-}
-
-@keyframes textLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
 /****** project ******/
 .project {
   background-color: var(--bg-color2);
@@ -521,7 +458,7 @@ header .hi {
   font-family: var(--en-font);
   padding: 40px 0 10px 0;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .projecttxt span {
@@ -538,7 +475,8 @@ header .hi {
 .prhashtag p {
   font-family: var(--ko-font3);
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+  padding-top: 0.5vw;
 }
 
 .morebtn {
@@ -547,7 +485,7 @@ header .hi {
   justify-content: center;
   font-family: var(--en-font);
   background-color: #fff;
-  margin-top: 5.208vw;
+  margin-top: 4.5vw;
   width: 12.4vw;
   height: 3vw;
   border-radius: 30px;
@@ -627,7 +565,7 @@ footer span::after {
 footer img {
   width: 12vw;
   position: absolute;
-  left: 14vw;
+  left: 13vw;
   bottom: 4vw;
   animation: rotate_logo 8s linear infinite;
 }
@@ -660,6 +598,5 @@ footer img {
   transform: translate(-50%, 5%);
   z-index: 9;
   will-change: transform;
-  pointer-events:none;
+  pointer-events: none;
 }
-
