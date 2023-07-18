@@ -287,6 +287,7 @@ header {
 .publishing_ul {
   margin-left: 1.3vw;
   font-size: 1.05vw;
+  font-weight: 500;
 }
 
 /****** technology ******/
@@ -417,7 +418,7 @@ header {
 }
 .typo-bottom {
   display: flex;
-  gap: 2.5vw;
+  gap: 3.5vw;
 }
 
 .typo-top .Light {
@@ -458,11 +459,11 @@ header {
 }
 
 .publishing_ul {
-  line-height: 2.4;
+  line-height: 2.2;
   font-size: 1.05vw;
   margin-left: 1.3vw;
   font-weight: 400;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
 }
 
 .p_btn li {
@@ -481,7 +482,7 @@ header {
 
 .p_small li {
   width: 10vw;
-  margin-bottom: 1.5vw;
+  margin-bottom: 4vw;
 }
 
 .p_btn li a {
@@ -553,7 +554,7 @@ header {
 }
 
 .review_txt {
-  width: 60%;
+  width: 55%;
   transform: translateX(5vw);
 }
 
@@ -564,7 +565,7 @@ header {
   padding-top: 2vw;
 }
 .review_txt_ul p {
-  font-size: 1.05vw;
+  font-size: 1vw;
   font-weight: 400;
   margin-left: 1.3vw;
   line-height: 1.5;

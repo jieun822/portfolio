@@ -340,7 +340,7 @@ header {
 }
 
 .asis_middle li {
-  padding-bottom: 2.7vw;
+  margin: 3.2vw 0;
 }
 
 .asis_left li:last-child,
@@ -360,13 +360,13 @@ header {
   font-size: 1.5vw;
   padding: 0.8vw 0;
   width: 9vw;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
 .asis_wrap h2 {
   top: -2vw;
   left: 9vw;
-  background-color: #9f9f9f;
+  background-color: #797979;
   color: #fff;
 }
 
