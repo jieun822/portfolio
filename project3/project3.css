@@ -576,6 +576,10 @@ header {
   color: var(--point-txt);
 }
 
+.review_bold {
+  width: 115%;
+}
+
 .review_bold p {
   font-size: 1vw;
 }
