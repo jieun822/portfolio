@@ -459,12 +459,14 @@ header .hi {
   padding: 40px 0 10px 0;
   font-weight: 500;
   line-height: 1;
+  letter-spacing: -2px;
 }
 
 .projecttxt span {
   font-family: var(--ko-font3);
   font-weight: 600;
   font-size: 3vw;
+  letter-spacing: 0;
 }
 
 .prhashtag {
