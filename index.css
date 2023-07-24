@@ -463,8 +463,8 @@ header .hi {
 
 .projecttxt span {
   font-family: var(--ko-font3);
-  font-weight: 500;
-  font-size: 3.5vw;
+  font-weight: 600;
+  font-size: 3vw;
 }
 
 .prhashtag {
@@ -509,6 +509,12 @@ header .hi {
 
 .morebtn:hover svg {
   transform: translateX(5px);
+}
+
+.swiper-slide .font {
+  font-family: var(--en-font);
+  font-weight: 600;
+  letter-spacing: -2px;
 }
 
 /****** contact ******/
