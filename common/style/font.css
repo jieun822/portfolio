@@ -1530,7 +1530,7 @@
   font-family: "NanumSquare";
   font-weight: 400;
   src: url(NanumSquareR.eot);
-  src: local("☺"), url(NanumSquareR.woff2) format("font-woff2");
+  src: local("☺"), url(../fonts/NanumSquareR.woff2) format("font-woff2");
 }
 
 /* [99] */
@@ -1538,7 +1538,7 @@
   font-family: "NanumSquare";
   font-weight: 500;
   src: url(NanumSquareB.eot);
-  src: local("☺"), url(NanumSquareB.woff2) format("font-woff2");
+  src: local("☺"), url(../fonts/NanumSquareB.woff2) format("font-woff2");
 }
 
 /* [100] */
@@ -1546,7 +1546,7 @@
   font-family: "NanumSquare";
   font-weight: 600;
   src: url(NanumSquareEB.eot);
-  src: local("☺"), url(NanumSquareEB.woff2) format("font-woff2");
+  src: local("☺"), url(../fonts/NanumSquareEB.woff2) format("font-woff2");
 }
 
 /* [101] */
@@ -1554,5 +1554,131 @@
   font-family: "NanumSquare";
   font-weight: 300;
   src: url(NanumSquareL.eot);
-  src: local("☺"), url(NanumSquareL.woff2) format("font-woff2");
+  src: local("☺"), url(../fonts/NanumSquareL.woff2) format("font-woff2");
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Medium.eot");
+  src: local("Recoleta Medium"),
+    url("../fonts/Recoleta-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Thin.eot");
+  src: local("Recoleta Thin"),
+    url("../fonts/Recoleta-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-SemiBold.eot");
+  src: local("Recoleta SemiBold"),
+    url("../fonts/Recoleta-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Regular.eot");
+  src: local("Recoleta Regular"),
+    url("../fonts/Recoleta-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Bold.eot");
+  src: local("Recoleta Bold"),
+    url("../fonts/Recoleta-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Black.eot");
+  src: local("Recoleta Black"),
+    url("../fonts/Recoleta-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("Recoleta-Light.eot");
+  src: local("Recoleta Light"),
+    url("../fonts/Recoleta-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-Light.eot");
+  src: local("GT Walsheim Pro Light"),
+    url("../fonts/GTWalsheimPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-Regular.eot");
+  src: local("GT Walsheim Pro Regular"),
+    url("../fonts/GTWalsheimPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-ThinOblique.eot");
+  src: local("GT Walsheim Pro Thin Oblique"),
+    url("../fonts/GTWalsheimPro-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro Ultra";
+  src: url("GTWalsheimPro-UltraBold.eot");
+  src: local("GT Walsheim Pro Ultra Bold"),
+    url("../fonts/GTWalsheimPro-UltraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-Bold.eot");
+  src: local("GT Walsheim Pro Bold"),
+    url("../fonts/GTWalsheimPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-Medium.eot");
+  src: local("GT Walsheim Pro Medium"),
+    url("../fonts/GTWalsheimPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("GTWalsheimPro-Black.eot");
+  src: local("GT Walsheim Pro Black"),
+    url("../fonts/GTWalsheimPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
 }
