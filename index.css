@@ -75,7 +75,7 @@ nav h1 img {
 }
 
 .hi img {
-  width: 4.5vw;
+  width: 4vw;
   animation: rotate_logo 3s linear infinite;
 }
 
@@ -160,44 +160,50 @@ header .hi {
   }
 }
 
-.connecting .line {
-  position: relative;
-}
-
-.connecting .line::after {
-  content: "";
-  width: 12.5vw;
-  height: 2vh;
-  background-color: #549692;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  z-index: -9;
-}
-
 .lineeffect {
   display: inline-block;
   position: relative;
 }
 
-.connecting .pencilimg img {
+.connecting .pencilimg .line0 {
   width: 20vw;
+  height: 11vw;
   position: absolute;
-  bottom: -0.5vw;
+  bottom: -2.4vw;
   right: 37vw;
   z-index: -999;
-  animation: pencil 1.5s linear infinite;
+  animation: pencil 2s linear forwards;
+  stroke-dasharray: 1026;
+  stroke-dashoffset: 1026;
+}
+
+.connecting .pencilimg .line1 {
+  width: 13vw;
+  height: 1.2vw;
+  position: absolute;
+  bottom: 0.7vw;
+  right: 13.3vw;
+  z-index: -999;
+  animation: pencil1 1s linear forwards;
+  stroke-dasharray: 548;
+  stroke-dashoffset: 548;
 }
 
 @keyframes pencil {
   0% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(-0deg);
+    stroke-dashoffset: 1026;
   }
   100% {
-    transform: rotate(-3deg);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pencil1 {
+  0% {
+    stroke-dashoffset: 548;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
@@ -543,8 +549,8 @@ footer span {
 footer span::after {
   content: "";
   width: 16vw;
-  height: 3vh;
-  background-color: #d7996d;
+  height: 1.5vw;
+  background-color: rgb(224, 194, 160);
   position: absolute;
   bottom: 30px;
   left: 0;
@@ -570,6 +576,7 @@ footer span::after {
   background-color: #b25252;
   color: #fff;
 }
+
 footer img {
   width: 12vw;
   position: absolute;
