@@ -182,7 +182,7 @@ header .hi {
   height: 1.2vw;
   position: absolute;
   bottom: 0.7vw;
-  right: 13.3vw;
+  right: 13.35vw;
   z-index: -999;
   animation: pencil1 1.5s linear forwards;
   stroke-dasharray: 548;
