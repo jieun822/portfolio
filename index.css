@@ -596,15 +596,3 @@ footer img {
 .arrowbtn a:hover {
   transform: translateY(-7px);
 }
-
-.cursor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3vw;
-  height: 3vw;
-  transform: translate(-50%, 5%);
-  z-index: 9;
-  will-change: transform;
-  pointer-events: none;
-}

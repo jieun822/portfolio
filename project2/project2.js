@@ -21,7 +21,7 @@ $(window).on("scroll", () => {
   }
 });
 
-// 마우스 이벤트
+/* // 마우스 이벤트
 $(document).mousemove(function (e) {
   var mouseX = e.pageX;
   var mouseY = e.pageY;
@@ -31,3 +31,4 @@ $(document).mousemove(function (e) {
     top: mouseY + "px",
   });
 }); 
+ */

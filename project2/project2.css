@@ -539,7 +539,7 @@ header {
   transform: translateY(-7px);
 }
 
-.cursor {
+/* .cursor {
   position: absolute;
   top: 0;
   left: 0;
@@ -550,3 +550,4 @@ header {
   will-change: transform;
   pointer-events: none;
 }
+ */

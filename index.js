@@ -38,7 +38,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// 마우스 이벤트
+/* // 마우스 이벤트
 $(document).mousemove(function (e) {
   var mouseX = e.pageX;
   var mouseY = e.pageY;
@@ -47,9 +47,7 @@ $(document).mousemove(function (e) {
     left: mouseX + "px",
     top: mouseY + "px",
   });
-});  
-
-
+});   */
 
 const $text = document.querySelector(".typing .text");
 
