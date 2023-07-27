@@ -7,7 +7,7 @@
 - 태블릿: 1024px</br>
 - 데스크탑: 1920px
 
-> 리디자인 사이트 바로 가기 👉 [클릭!](https://jieun822.github.io/portfolio/project1/project1.html#)
+> 리디자인 사이트 바로 가기 👉 [클릭!](https://jieun822.github.io/portfolio/10000LAB/10000LAB.html#)
 
 
 ## 🕰️ 진행 기간
