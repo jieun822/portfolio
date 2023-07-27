@@ -184,7 +184,7 @@ header .hi {
   bottom: 0.7vw;
   right: 13.3vw;
   z-index: -999;
-  animation: pencil1 1s linear forwards;
+  animation: pencil1 1.5s linear forwards;
   stroke-dasharray: 548;
   stroke-dashoffset: 548;
 }
