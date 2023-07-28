@@ -9,10 +9,11 @@
 :root {
   --en-font: "Montserrat", sans-serif;
   --ko-font: "Noto Sans KR", sans-serif;
+  --recolta: "Recoleta", sans-serif;
+  --gt: "GT Walsheim Pro", sans-serif;
   --point-color: #b25252;
   --bg-color1: #fffbf5;
   --bg-color2: #f6eee3;
-  --ko-font2: "NanumSquareRound", "맑은 고딕", sans-serif;
   --ko-font3: "Pretendard Variable", "맑은 고딕", sans-serif;
   --point-txt: #9e4b4b;
   --btn-color: #f3e7d6e5;
@@ -121,7 +122,7 @@ header {
   transform: translate(-50%, -50%);
 }
 .header_wrap img {
-  width: 55%;
+  width: 54%;
 }
 .headertxt {
   display: flex;
@@ -142,11 +143,11 @@ header {
 
 .headertxt h1::after {
   content: "";
-  width: 30vw;
+  width: 19.5vw;
   height: 2vh;
-  background-color: #edd6b7;
+  background-color: #706056bb;
   position: absolute;
-  left: -0.5vw;
+  left: -0.55vw;
   bottom: -0.03vw;
   z-index: -9;
 }
@@ -157,10 +158,14 @@ header {
   font-weight: 600;
 }
 
+.headertxt h2 span {
+  font-family: var(--en-font);
+}
 .headertxt-ul {
   display: flex;
   gap: 20px;
   font-size: 1.042vw;
+  padding-bottom: 1vw;
 }
 
 .headertxt-ul li {
@@ -338,12 +343,12 @@ header {
 .styleguide_txt .styleguide_ul li p strong {
   color: var(--point-txt);
 }
-.styleguide_txt .styleguide_ul li:nth-child(2) .keyword-wrap {
+.styleguide_txt .styleguide_ul li:nth-child(1) .keyword-wrap {
   margin: 1.1vw 0 0 1.3vw;
 }
-.styleguide_txt .styleguide_ul li:nth-child(2) .keyword-wrap span {
-  font-size: 1.05vw;
-  font-weight: 500;
+.styleguide_txt .styleguide_ul li:nth-child(1) .keyword-wrap span {
+  font-size: 0.9vw;
+  font-weight: 600;
   display: inline-block;
   border: 1.5px solid #333;
   width: 5vw;
@@ -362,10 +367,8 @@ header {
 
 .styleguide .typo-wrap {
   margin: 3vw 0 0 2vw;
-  display: flex;
   font-size: 1.05vw;
   text-align: center;
-  gap: 3vw;
   line-height: 2;
 }
 
@@ -375,28 +378,54 @@ header {
   margin-bottom: 0.7vw;
 }
 
-.styleguide .typo-wrap .typo-left {
-  font-family: var(--ko-font2);
+.styleguide .typo-wrap .typo-left > h3,
+.styleguide .typo-wrap .typo-left > p {
+  font-family: var(--ko-font3);
+}
+.styleguide .typo-wrap .typo-right > h3,
+.styleguide .typo-wrap .typo-right > p {
+  font-family: var(--en-font);
 }
 
-.styleguide .typo-wrap .typo-left p:first-child,
-.styleguide .typo-wrap .typo-right p:first-child {
+.typo-top {
+  width: 44%;
+  margin-bottom: 3vw;
+}
+.typo-bottom {
+  display: flex;
+  gap: 3.5vw;
+}
+.typo-left,
+.typo-right {
+  width: 44%;
+}
+
+.typo-top .Light {
+  font-weight: 300;
+}
+
+.typo-wrap .Regular {
+  font-weight: 400;
+}
+
+.typo-wrap .Medium {
+  font-weight: 500;
+}
+
+.typo-wrap .Bold {
   font-weight: 700;
 }
 
-.styleguide .typo-wrap .typo-left p:last-child,
-.styleguide .typo-wrap .typo-right p:last-child {
+.typo-wrap .Black {
   font-weight: 800;
 }
 
-.styleguide .typo-wrap .typo-right h3,
-.styleguide .typo-wrap .typo-right p {
-  font-family: Rubik, sans-serif;
+.typo-wrap .ExtraBold {
+  font-weight: 800;
 }
 
-.styleguide .typo-wrap .typo-left h3,
-.styleguide .typo-wrap .typo-left p {
-  font-family: var(--ko-font2);
+.typo-wrap .UltraBold {
+  font-weight: 900;
 }
 
 /****** publishing ******/
@@ -435,19 +464,28 @@ header {
   margin-right: 5px;
 }
 
+.problem_solution_ul li:first-child {
+  margin-top: 3vw;
+}
+
 .problem_solution_ul li {
   line-height: 1.5;
   font-size: 1.05vw;
-  margin-top: 3vw;
+  margin-top: 4vw;
   margin-left: 1.3vw;
   font-weight: 600;
+  word-break: break-all;
 }
 
+.problem_solution_ul li p:last-child {
+  padding-bottom: 0;
+}
 .problem_solution_ul li p {
   font-size: 1vw;
   font-weight: 400;
   padding: 0.5vw 0 0 1.1vw;
   background-color: var(--bg-color1);
+  padding-bottom: 1vw;
 }
 
 .problem_solution_ul li strong {
@@ -477,7 +515,6 @@ header {
 .review .common_wrap {
   border-bottom: none;
 }
-
 /****** footer  ******/
 .footer_ul {
   display: flex;
