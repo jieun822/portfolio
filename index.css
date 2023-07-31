@@ -268,9 +268,10 @@ header .hi {
   line-height: 1.25;
 }
 
-.abouttxt p {
-  font-size: 1.3vw;
+.abouttxt > p {
+  font-size: 1.2vw;
   padding: 30px 0 50px;
+  width: 90%;
 }
 
 .aboutimg {

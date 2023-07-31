@@ -506,6 +506,10 @@ header {
   top: -1.2vw;
   left: 4.8vw;
 }
+
+.review_txt {
+  width: 65%;
+}
 .review_txt h3 {
   padding-bottom: 2vw;
 }
