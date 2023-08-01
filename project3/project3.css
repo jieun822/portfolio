@@ -273,6 +273,10 @@ header {
   padding: 10vw 0 0;
 }
 
+.process .common_wrap {
+  padding-bottom: 5.5vw;
+}
+
 .process .pencileffect {
   top: -1.7vw;
   left: 4vw;

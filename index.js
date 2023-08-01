@@ -52,7 +52,11 @@ $(document).mousemove(function (e) {
 const $text = document.querySelector(".typing .text");
 
 // 글자 모음
-const letters = ["코드와 디자인을 연결하는", "열정이 넘치는", "포기하지 않는"];
+const letters = [
+  "코드와 디자인을 연결하는",
+  "기술적인 변화에 능동적인",
+  "끈기와 상상력이 넘치는",
+];
 
 // 글자 입력 속도
 const speed = 100;
