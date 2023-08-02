@@ -27,7 +27,7 @@
 
 /* 스크롤바 */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -36,6 +36,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: #b25252;
+  border-radius: 30px;
 }
 
 html {
@@ -47,6 +48,7 @@ body {
   font-family: var(--ko-font3);
   background-color: var(--bg-color1);
   overflow-x: hidden;
+  cursor: none;
 }
 
 .dot {
@@ -536,6 +538,7 @@ header {
   font-weight: 400;
   padding: 0.5vw 0 0 1.1vw;
   background-color: var(--bg-color1);
+  margin-bottom: 0.3vw;
 }
 
 .problem_solution_ul li strong {
@@ -648,15 +651,22 @@ header {
   transform: translateY(-7px);
 }
 
-/* .cursor {
+/***** cursor *****/
+.cursor {
   position: absolute;
-  top: 0;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: var(--point-color);
+  border: 2px solid var(--point-color);
   left: 0;
-  width: 3vw;
-  height: 3vw;
-  transform: translate(-50%, 5%);
-  z-index: 9;
-  will-change: transform;
+  transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: width 500ms, height 500ms;
+  z-index: 9999;
 }
- */
+.cursor.large {
+  height: 4vw;
+  width: 4vw;
+  background-color: transparent;
+}

@@ -101,3 +101,42 @@ function wait(ms) {
 
 // 초기 실행
 setTimeout(typing, 1500);
+
+// 마우스 커서 커스텀
+
+const cursor = document.querySelector(".cursor");
+const links = document.querySelectorAll("a");
+const navlinks = document.querySelectorAll("li");
+const cursorbtn = document.querySelectorAll(".cursorbtn");
+
+document.addEventListener("mousemove", (e) => {
+  let leftPosition = e.pageX + 4;
+  let topPosition = e.pageY + 4;
+
+  cursor.style.left = leftPosition + "px";
+  cursor.style.top = topPosition + "px";
+});
+
+links.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    cursor.classList.add("large");
+  });
+});
+
+links.forEach((link) => {
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("large");
+  });
+});
+
+cursorbtn.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    cursor.classList.add("large");
+  });
+});
+
+cursorbtn.forEach((link) => {
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("large");
+  });
+});

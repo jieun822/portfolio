@@ -22,7 +22,7 @@
   <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 내가 쓴 js -->
-  <script defer src="./project3.js"></script>
+  <script defer src="../common/style/sub-common.js"></script>
 </head>
 
 <body>
@@ -239,26 +239,29 @@
         <h3 class="dot">문제 및 해결</h3>
         <ul class="problem_solution_ul">
           <li>1. 한 페이지에 Swiper 2개가 들어가는 문제
-            <p>· 서브페이지를 작업하면서 한 페이지에 Swiper가 2개가 들어가는 경우가 있었습니다.<br> &nbsp;&nbsp;이런 경우는 처음 경험해봐서 어떻게 적용해야할 지 고민이 많았는데
+            <p>&nbsp;&nbsp;서브페이지를 작업하면서 한 페이지에 Swiper가 2개가 들어가는 경우가 있었습니다.
+            </p>
+            <p>&nbsp;&nbsp;이런 경우는 처음 경험해봐서 어떻게 적용해야할 지 고민이 많았는데
               html
               구조에서
-              <br><strong>&nbsp;&nbsp;각각의 Swiper영역에 클래스명을 따로 부여</strong>해주었더니 정상적으로 작동 되었습니다.
+              <strong>각각의 Swiper영역에 클래스명을 따로 부여</strong>해주었더니 정상적으로 작동 되었습니다.
             </p>
           </li>
           <li>2. 메인페이지 사진 뒤 선 스크롤 이벤트
-            <p>· 메인페이지 중 사진 뒤에 선이 스크롤 될때 서서히 내려오도록 구현해야 하는 부분이 있었습 &nbsp;&nbsp;니다. 처음에는 css 속성인 after와 before를 사용하여 aos
+            <p>&nbsp;&nbsp;메인페이지 중 사진 뒤에 선이 스크롤 될때 서서히 내려오도록 구현해야 하는 부분이 있었습니다. 처음에는 css 속성인 after와 before를 사용하여 aos
               라이브러리를 적용시키려
-              했지 &nbsp;&nbsp;만 원하는 대로 적용되지 않았습니다. 그래서 <strong>after와 before가 아닌 span 속성으로 선을 &nbsp;&nbsp;만든 후 position으로
-                위치를
-                조정</strong>하고 aos
-              라이브러리를 적용시켜 스크롤 될때
-              선이 함께 &nbsp;&nbsp;내려오도록 구현하였습니다.
+              했지만 원하는 대로 적용되지 않았습니다.
+            </p>
+            <p> &nbsp;&nbsp;그래서 <strong>after와 before가 아닌 span 속성으로 선을 만든 후 position으로 위치를 조정</strong>하고 aos
+              라이브러리를 적용시켜 스크롤 될때 선이 함께 내려오도록 구현하였습니다.
             </p>
           </li>
           <li>3. 모니터 사이즈별 텍스트 사이즈 문제
-            <p>· 이번에 만든 웹사이트가 반응형은 아니였지만 1400px ~ 1920px 까지는 문제없이 보일 수 &nbsp;&nbsp;있도록 하고 싶었습니다. 폰트 사이즈로 rem이나 px를 줬을
-              경우에는 창의 크기가
-              줄어들 &nbsp;&nbsp;때 텍스트가 넘치는 현상이 발생하여 <strong>px을 vw값으로 변환</strong>하여 적용하였습니다. </p>
+            <p>&nbsp;&nbsp;이번에 만든 웹사이트가 반응형은 아니였지만 1400px ~ 1920px 까지는 문제없이 보일 수 있도록 하고 싶었습니다.
+            </p>
+            <p>&nbsp;&nbsp;폰트 사이즈로 rem이나 px를 줬을
+              경우에는 창의 크기가 줄어들때 텍스트가 넘치는 현상이 발생하여 <strong>px을 vw값으로 변환</strong>하여 적용하였습니다. </p>
+
           </li>
         </ul>
       </div>
@@ -346,10 +349,8 @@
     </ul>
   </footer>
 
-  <!---- 마우스 따라다니는 이벤트---->
-  <!--  <div class="cursor">
-    <img src="../images/smile3.png" alt="주황색의 스마일 모양 이미지">
-  </div> -->
+  <!-- 마우스 커서 -->
+  <div class="cursor"></div>
 
 
 </body>
