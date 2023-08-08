@@ -281,11 +281,12 @@ header .hi {
 }
 
 .aboutimg img {
-  width: 70%;
+  width: 80%;
   display: block;
   margin: 0 auto;
   transform: translateY(-70px) translateX(60px);
 }
+
 
 .hashtag {
   display: flex;
