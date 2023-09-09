@@ -122,9 +122,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .header_wrap img {
   width: 55%;
 }
+
 .headertxt {
   display: flex;
   flex-direction: column;
@@ -179,6 +181,22 @@ header {
   vertical-align: middle;
   background: var(--point-color);
   border-radius: 50%;
+}
+
+.headertxt .viewbtn a {
+  font-family: var(--en-font);
+  font-weight: 500;
+  font-size: 1.1vw;
+  background-color: #fff;
+  width: 9vw;
+  height: 2.2vw;
+  display: block;
+  text-align: center;
+  line-height: 2.2vw;
+  border-radius: 50px;
+  margin-top: 4.5vw;
+  margin-left: 20vw;
+  box-shadow: 0.3vw 0.3vw #edd6b7;
 }
 
 /****** overview ******/
